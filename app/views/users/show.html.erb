@@ -1,0 +1,14 @@
+<table>
+  <tr>
+    <td>
+      <h1>
+        <%= gravatar_for @user %>
+        <%= @user.username %>
+      </h1>
+    </td>
+    <td>
+      <strong>Name</strong> <%= @user.username %><br />
+      <strong>URL</strong>  <%= link_to user_path(@user), @user %>
+    </td>
+  </tr>
+</table>

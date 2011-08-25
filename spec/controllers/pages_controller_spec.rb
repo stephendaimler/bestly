@@ -1,4 +1,5 @@
 require 'spec_helper'
+require 'devise'
 
 describe PagesController do
   render_views
@@ -8,6 +9,7 @@ describe PagesController do
   end
 
   describe "GET 'home'" do
+      
     it "should be successful" do
       get 'home'
       response.should be_success

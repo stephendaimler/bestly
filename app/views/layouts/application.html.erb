@@ -5,6 +5,9 @@
     <%= csrf_meta_tag %>
   </head>
   <body>
+		<header>
+			<%= render 'layouts/header' %>
+		</header>
 		<%= yield %>
 		<%= render 'layouts/footer' %>
   </body>

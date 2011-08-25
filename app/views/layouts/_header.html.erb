@@ -1,0 +1,16 @@
+<header>
+    <ul>
+    <li><%= link_to "Home", root_path %></li>
+		<% if signed_in? %>
+		<li><%= link_to "Settings", edit_user_registration_path %></li>
+		<li><%= link_to "Profile", current_user %></li>
+		<% end %>
+		<% if signed_in? %>
+			Signed in as <%= current_user.username %>. Not you?
+			<%= link_to "Sign out", destroy_user_session_path %>
+  	<% else %>
+    	<%= link_to "Sign up", new_user_registration_path %> or <%= link_to "sign in",
+			new_user_session_path %>
+  	<% end %>
+    </ul>
+</header>
