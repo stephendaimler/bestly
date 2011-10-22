@@ -9,9 +9,11 @@ Bestly::Application.routes.draw do
 #    get '/signup' => 'devise/registrations#new', :as => :new_user_registration
 
   resources :users
+  resources :links
 
   match '/contact', :to => 'pages#contact'
   match '/about',   :to => 'pages#about'
+  match '/submit', :to => 'links#new'
 
   root :to => 'pages#home'
 
