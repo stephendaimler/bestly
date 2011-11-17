@@ -1,5 +1,5 @@
 class LinksController < ApplicationController
-  before_filter :authenticate_user!, :only => [:new, :create]
+  before_filter :authenticate_user!, :only => [:new, :create, :vote_up]
   
   def index
     @title = "New links"
@@ -24,4 +24,19 @@ class LinksController < ApplicationController
       render 'pages/home'
     end
   end
+  
+#       render :nothing => true, :status => 200  
+  
+  def vote_up
+    debugger
+    begin
+      current_user.vote_for(@link = Link.find(params[:id]))
+      respond_to do |format|
+        format.html { redirect_to @link }
+        format.js
+      end
+    rescue ActiveRecord::RecordInvalid
+      render :nothing => true, :status => 404
+    end
+  end  
 end

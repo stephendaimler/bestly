@@ -8,4 +8,7 @@ class User < ActiveRecord::Base
   attr_accessible :email, :password, :password_confirmation, :remember_me, :username
   
   has_many :links, :dependent => :destroy
+  
+  acts_as_voter
+  has_karma(:links, :as => :submitter)
 end

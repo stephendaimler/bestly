@@ -7,5 +7,7 @@ class Link < ActiveRecord::Base
   validates :url, :presence => true
   validates :user_id, :presence => true
   
+  acts_as_voteable
+  
   default_scope :order => 'links.created_at DESC'
 end

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110831001926) do
+ActiveRecord::Schema.define(:version => 20111027005048) do
 
   create_table "links", :force => true do |t|
     t.string   "url"
@@ -19,6 +19,8 @@ ActiveRecord::Schema.define(:version => 20110831001926) do
     t.integer  "points",      :default => 0
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "up_votes",    :default => 0, :null => false
+    t.integer  "down_votes",  :default => 0, :null => false
   end
 
   add_index "links", ["user_id"], :name => "index_links_on_user_id"
@@ -37,9 +39,39 @@ ActiveRecord::Schema.define(:version => 20110831001926) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "username"
+    t.integer  "up_votes",                              :default => 0,  :null => false
+    t.integer  "down_votes",                            :default => 0,  :null => false
   end
 
   add_index "users", ["email"], :name => "index_users_on_email", :unique => true
   add_index "users", ["reset_password_token"], :name => "index_users_on_reset_password_token", :unique => true
+
+  create_table "votes", :force => true do |t|
+    t.boolean  "vote",          :default => false
+    t.integer  "voteable_id",                      :null => false
+    t.string   "voteable_type",                    :null => false
+    t.integer  "voter_id"
+    t.string   "voter_type"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "votes", ["voteable_id", "voteable_type"], :name => "index_votes_on_voteable_id_and_voteable_type"
+  add_index "votes", ["voter_id", "voter_type", "voteable_id", "voteable_type"], :name => "fk_one_vote_per_user_per_entity", :unique => true
+  add_index "votes", ["voter_id", "voter_type"], :name => "index_votes_on_voter_id_and_voter_type"
+
+  create_table "votings", :force => true do |t|
+    t.string   "voteable_type"
+    t.integer  "voteable_id"
+    t.string   "voter_type"
+    t.integer  "voter_id"
+    t.boolean  "up_vote",       :null => false
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "votings", ["voteable_type", "voteable_id", "voter_type", "voter_id"], :name => "unique_voters", :unique => true
+  add_index "votings", ["voteable_type", "voteable_id"], :name => "index_votings_on_voteable_type_and_voteable_id"
+  add_index "votings", ["voter_type", "voter_id"], :name => "index_votings_on_voter_type_and_voter_id"
 
 end
