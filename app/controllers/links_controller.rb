@@ -28,7 +28,6 @@ class LinksController < ApplicationController
 #       render :nothing => true, :status => 200  
   
   def vote_up
-    debugger
     begin
       current_user.vote_for(@link = Link.find(params[:id]))
       respond_to do |format|
