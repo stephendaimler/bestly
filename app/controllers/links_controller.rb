@@ -3,7 +3,7 @@ class LinksController < ApplicationController
   
   def index
     @title = "New links"
-    @links = Link.all
+    @links = Link.paginate(:page => params[:page])
   end
 
   def show
@@ -31,7 +31,7 @@ class LinksController < ApplicationController
     begin
       current_user.vote_for(@link = Link.find(params[:id]))
       respond_to do |format|
-        format.html { redirect_to @link }
+        format.html { redirect_to links_path }
         format.js
       end
     rescue ActiveRecord::RecordInvalid

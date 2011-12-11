@@ -2,6 +2,7 @@ class PagesController < ApplicationController
   
   def home
     @title = "Home"
+    @links = Link.paginate(:page => params[:page])
   end
 
   def about
