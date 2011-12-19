@@ -31,7 +31,7 @@ class LinksController < ApplicationController
     begin
       current_user.vote_for(@link = Link.find(params[:id]))
       respond_to do |format|
-        format.html { redirect_to links_path }
+        format.html { redirect_to :back }
         format.js
       end
     rescue ActiveRecord::RecordInvalid
