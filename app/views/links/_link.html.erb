@@ -1,0 +1,13 @@
+<li>
+<%= link_to link.description, link.url %>
+Posted by <%= link_to link.user.username, link.user %>
+<%= time_ago_in_words(link.created_at) %> ago.
+<%= link.plusminus %> votes.
+<% if signed_in? %>
+	<% unless current_user.voted_for?(link) %>
+		<%= link_to 'Vote up', vote_up_link_path(link), :method => :post, :remote => true %>
+	<% end %>
+<% else %>
+	<%= link_to 'Vote up', vote_up_link_path(link), :method => :post, :remote => true %>
+<% end %>
+</li>

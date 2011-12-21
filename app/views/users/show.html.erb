@@ -1,14 +1,9 @@
-<table>
-  <tr>
-    <td>
-      <h1>
-        <%= gravatar_for @user %>
-        <%= @user.username %>
-      </h1>
-    </td>
-    <td>
-      <strong>Name</strong> <%= @user.username %><br />
-      <strong>URL</strong>  <%= link_to user_path(@user), @user %>
-    </td>
-  </tr>
-</table>
+<%= gravatar_for @user %>
+<%= @user.username %>
+Name <%= @user.username %>
+URL <%= link_to user_path(@user), @user %>
+Karma <%= @user.karma %>
+
+<%= render @links %>
+<%= will_paginate @links %>
+
