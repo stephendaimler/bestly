@@ -18,6 +18,7 @@ class LinksController < ApplicationController
   def create
     @link  = current_user.links.build(params[:link])
     if @link.save
+      current_user.vote_for(@link)
       flash[:success] = "Link created!"
       redirect_to links_path
     else

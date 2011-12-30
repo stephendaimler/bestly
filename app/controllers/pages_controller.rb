@@ -2,7 +2,9 @@ class PagesController < ApplicationController
   
   def home
     @title = "Home"
-    @links = Link.paginate(:page => params[:page])
+    @links = Link.all
+    @links.sort! {|a,b| b.hotness <=> a.hotness }
+    @links = @links[0...30]
   end
 
   def about

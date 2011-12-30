@@ -10,5 +10,5 @@ class User < ActiveRecord::Base
   has_many :links, :dependent => :destroy
   
   acts_as_voter
-  has_karma(:links, :as => :submitter)
+  has_karma(:links, :as => :user)
 end
