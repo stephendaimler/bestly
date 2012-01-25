@@ -1,8 +1,4 @@
 <footer>
-	<nav>
-    <ul>
-      <li><%= link_to "About", about_path %></li>
-      <li><%= link_to "Contact", contact_path %></li>
-    </ul>
-  </nav>
+	<%= link_to "About", about_path, :class => "not_current" %>
+  <%= link_to "Contact", contact_path, :class => "not_current" %>
 </footer>

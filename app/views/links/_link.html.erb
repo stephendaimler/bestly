@@ -1,13 +1,28 @@
-<li>
-<%= link_to link.description, link.url %>
-Posted by <%= link_to link.user.username, link.user %>
-<%= time_ago_in_words(link.created_at) %> ago.
-<%= link.plusminus %> votes.
-<% if signed_in? %>
-	<% unless current_user.voted_for?(link) %>
-		<%= link_to 'Vote up', vote_up_link_path(link), :method => :post, :remote => true %>
-	<% end %>
-<% else %>
-	<%= link_to 'Vote up', vote_up_link_path(link), :method => :post, :remote => true %>
-<% end %>
-</li>
+<table class ="links">
+	<tr>
+		<td class ="arrow">
+			<% if signed_in? %>
+				<% unless current_user.voted_for?(link) %>
+					<%= link_to image_tag("arrow.png", :alt => "Vote up"), vote_up_link_path(link), :method => :post, :remote => true %>
+				<% end %>
+			<% else %>
+				<%= link_to image_tag("arrow.png", :alt => "Vote up"), vote_up_link_path(link), :method => :post, :remote => true %>
+			<% end %>
+		</td>
+		<td class="title">
+			<%= link_to link.description, link.url %>
+			<span class="domain">(<%= url=link.url;url = "http://" + link.url unless url =~ /^http/;URI.parse(url).host%>)</span>
+		</td>
+	</tr>	
+	<tr>
+		<td colspan="1">
+		</td>
+		<td class ="info">
+			<%= link.plusminus %> votes.
+			Posted by <%= link_to link.user.username, link.user %>
+			<%= time_ago_in_words(link.created_at) %> ago.
+		</td>
+	</tr>
+	<tr style="height:5px">
+	</tr>
+</table>

@@ -9,11 +9,16 @@ class Link < ActiveRecord::Base
   
   acts_as_voteable
   
-  default_scope :order => 'links.created_at DESC'
+  #default_scope :order => 'links.created_at DESC'
   
-  scope :hotness2, :order => 'hotness_column_name_here DESC'
+  scope :sorted_by_hotness, :order => 'links.hotness DESC'
   
-  def hotness
+  def update_hotness!
+    self.hotness = hotness_score
+    self.save
+  end
+  
+  def hotness_score
     gravity = 1.8
     age_in_hours = ((Time.now - self.created_at)/3600).round
     (self.plusminus - 1) / (age_in_hours+2) ** gravity

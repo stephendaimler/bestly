@@ -1,9 +1,16 @@
-<%= gravatar_for @user %>
-<%= @user.username %>
-Name <%= @user.username %>
-URL <%= link_to user_path(@user), @user %>
-Karma <%= @user.karma %>
+<h2>
+	<%= @user.username %><br />
+</h2>
+Points: <%= @user.karma %><br />
+<% if current_user?(@user) %>
+<%= link_to "Settings", edit_user_registration_path %><br />
+<% end %>
+<% if current_user.try(:admin?) %>
+<%= link_to "delete", @user, :method => :delete, :confirm => "You sure?", :title => "Delete #{@user.username}" %>
+<% end %>
 
+<div id= "user_submissions">
+Submissions:	
 <%= render @links %>
 <%= will_paginate @links %>
-
+</div> <!-- end of user_submissions div -->

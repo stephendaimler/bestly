@@ -6,10 +6,13 @@
 		<meta charset="utf-8"/>
     <%= csrf_meta_tag %>
 		<%= javascript_include_tag 'jquery', 'application' %>
+		<%= render 'layouts/stylesheets' %>
   </head>
   <body>
 		<%= render 'layouts/header' %>
-		<%= yield %>
-		<%= render 'layouts/footer' %>
+		<div id="bodycontent">
+			<%= yield %>
+			<%= render 'layouts/footer' %>
+		</div> <!-- end of bodycontent div -->
   </body>
 </html>

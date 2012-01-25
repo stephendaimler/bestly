@@ -2,10 +2,10 @@
   <%= render 'shared/error_messages', :object => f.object %>
     
 		<p><%= f.label :description %><br />
-    <%= f.text_field :description %></p>
+    <%= f.text_field :description, :size => 75 %></p>
 
 		<p><%= f.label :url %><br />
-    <%= f.text_field :url %></p>
+    <%= f.text_field :url, :size => 75 %></p>
 
     <p><%= f.submit "Submit" %></p>
 <% end %>

@@ -31,6 +31,7 @@ class LinksController < ApplicationController
   def vote_up
     begin
       current_user.vote_for(@link = Link.find(params[:id]))
+      @link.update_hotness!
       respond_to do |format|
         format.html { redirect_to :back }
         format.js

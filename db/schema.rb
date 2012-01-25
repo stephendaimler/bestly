@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20111027005048) do
+ActiveRecord::Schema.define(:version => 20120120020203) do
 
   create_table "links", :force => true do |t|
     t.string   "url"
@@ -21,13 +21,15 @@ ActiveRecord::Schema.define(:version => 20111027005048) do
     t.datetime "updated_at"
     t.integer  "up_votes",    :default => 0, :null => false
     t.integer  "down_votes",  :default => 0, :null => false
+    t.float    "hotness"
   end
 
+  add_index "links", ["hotness"], :name => "index_links_on_hotness"
   add_index "links", ["user_id"], :name => "index_links_on_user_id"
 
   create_table "users", :force => true do |t|
-    t.string   "email",                                 :default => "", :null => false
-    t.string   "encrypted_password",     :limit => 128, :default => "", :null => false
+    t.string   "email",                                 :default => "",    :null => false
+    t.string   "encrypted_password",     :limit => 128, :default => "",    :null => false
     t.string   "reset_password_token"
     t.datetime "reset_password_sent_at"
     t.datetime "remember_created_at"
@@ -39,8 +41,9 @@ ActiveRecord::Schema.define(:version => 20111027005048) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "username"
-    t.integer  "up_votes",                              :default => 0,  :null => false
-    t.integer  "down_votes",                            :default => 0,  :null => false
+    t.integer  "up_votes",                              :default => 0,     :null => false
+    t.integer  "down_votes",                            :default => 0,     :null => false
+    t.boolean  "admin",                                 :default => false
   end
 
   add_index "users", ["email"], :name => "index_users_on_email", :unique => true

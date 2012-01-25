@@ -5,4 +5,8 @@ module UsersHelper
                                             :class => 'gravatar',
                                             :gravatar => options)
   end
+  
+  def current_user?(user)
+      user == current_user
+  end
 end

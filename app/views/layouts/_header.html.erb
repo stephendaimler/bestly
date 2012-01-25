@@ -1,18 +1,17 @@
-<header>
-    <ul>
-    <li><%= link_to "Hot Deals", root_path %></li>
-		<li><%= link_to "New Deals", links_path %></li>
-		<li><%= link_to "Submit", new_link_path %></li>
-		<% if signed_in? %>
-		<li><%= link_to "Settings", edit_user_registration_path %></li>
-		<li><%= link_to "Users", users_path %></li>
-		<% end %>
-		<% if signed_in? %>
-			<%= link_to current_user.username, current_user %>.
-			<%= link_to "Sign out", destroy_user_session_path %>
-  	<% else %>
-    	<%= link_to "Sign up", new_user_registration_path %> or <%= link_to "sign in",
-			new_user_session_path %>
-  	<% end %>
-    </ul>
+<header>	
+	<h1>BYO Deal</h1>
+	<nav>
+  	<%= link_to "Hot deals", root_path, :class => current_page?(root_path) ? "current" : "not_current" %> |
+		<%= link_to "New deals", links_path, :class => current_page?(links_path) ? "current" : "not_current" %> |
+		<%= link_to "Submit a deal", new_link_path, :class => current_page?(new_link_path) ? "current" : "not_current" %>
+	</nav>
+	<div id="signin">
+	<% if signed_in? %>
+		<%= link_to current_user.username, current_user, :class => "not_current" %> |
+		<%= link_to "Sign out", destroy_user_session_path, :class => "not_current" %> 
+  <% else %>
+   	<%= link_to "Sign up", new_user_registration_path, :class => "not_current" %> or <%= link_to "sign in",
+		new_user_session_path, :class => "not_current" %> 
+  <% end %>
+	</div> <!-- end of signin div -->
 </header>
