@@ -33,8 +33,8 @@ class LinksController < ApplicationController
       current_user.vote_for(@link = Link.find(params[:id]))
       @link.update_hotness!
       respond_to do |format|
-        format.html { redirect_to :back }
         format.js
+        format.html {redirect_to :back}
       end
     rescue ActiveRecord::RecordInvalid
       render :nothing => true, :status => 404
