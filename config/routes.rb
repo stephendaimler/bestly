@@ -18,6 +18,9 @@ Bestly::Application.routes.draw do
   match '/contact', :to => 'pages#contact'
   match '/about',   :to => 'pages#about'
   match '/submit', :to => 'links#new'
+  
+  match '/users/:id', :to => 'users#show',    :as => :user,         :via => :get
+  match '/users/:id', :to => 'users#destroy', :as => :destroy_user, :via => :delete
 
   root :to => 'pages#home'
 
