@@ -1,17 +1,42 @@
-<header>	
-	<h1>BYO Deal</h1>
-	<nav>
-  	<%= link_to "Hot deals", root_path, :class => current_page?(root_path) ? "current" : "not_current" %> |
-		<%= link_to "New deals", links_path, :class => current_page?(links_path) ? "current" : "not_current" %> |
-		<%= link_to "Submit a deal", new_link_path, :class => current_page?(new_link_path) ? "current" : "not_current" %>
-	</nav>
-	<div id="signin">
-	<% if signed_in? %>
-		<%= link_to current_user.username, current_user, :class => "not_current" %> |
-		<%= link_to "Sign out", destroy_user_session_path, :class => "not_current" %> 
-  <% else %>
-   	<%= link_to "Sign up", new_user_registration_path, :class => "not_current" %> or <%= link_to "sign in",
-		new_user_session_path, :class => "not_current" %> 
-  <% end %>
-	</div> <!-- end of signin div -->
+<header id="header" class="container">
+	
+	<div id="header-inner" class="sixteen columns over">
+		
+		<div id="masthead" class="one-third column alpha">
+			<h1 id="site-title" class="remove-bottom"><%= link_to "byodeal", root_path %></h1>
+			<h2 id="sub-title">Travel lovers sharing travel deals</h2>
+		</div>
+		
+		<nav id="main-nav" class="two-thirds column omega">
+			<a href="#main-nav-menu" class="mobile-menu-button button">+ Menu</a>
+			<ul id="main-nav-menu" class="nav-menu">
+				<li id="nav-home"  >
+					<%= link_to "Hot deals", root_path %>
+				</li>
+				<li id="nav-new"  >
+					<%= link_to "New deals", links_path %>
+				</li>
+				<li id="nav-submit" >
+					<%= link_to "Submit a deal", new_link_path %>				
+				</li>
+				<% if signed_in? %>
+				<li id="nav-profile" >
+					<%= link_to "Profile", current_user %>
+				</li>
+				<li id="nav-signout" >
+					<%= link_to "Sign out", destroy_user_session_path %>
+				</li>  
+			  <% else %>
+				<li id="nav-signup" >
+			   	<%= link_to "Sign up", new_user_registration_path %>
+				</li>	
+				<li id="nav-signin" >
+					<%= link_to "Sign in", new_user_session_path %>
+				</li>
+			  <% end %>	
+			</ul>
+
+		</nav>
+	</div>
+	
 </header>

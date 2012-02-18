@@ -1,18 +1,107 @@
 <!DOCTYPE html>
-<html lang="en">
-<html>
-  <head>
-    <title><%= title %></title>
-		<meta charset="utf-8"/>
-    <%= csrf_meta_tag %>
-		<%= javascript_include_tag 'jquery', 'application' %>
-		<%= render 'layouts/stylesheets' %>
-  </head>
-  <body>
-		<%= render 'layouts/header' %>
-		<div id="bodycontent">
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+	
+	<!-- Agility - Responsive HTML5/CSS3 Template by SevenSpark http://agility-html.sevenspark.com -->
+
+	<!-- Basic Page Needs
+  	================================================== -->
+	<meta charset="utf-8">
+  <title><%= title %></title>
+	<meta name="description" content="Byodeal is a community of travel lovers sharing travel deals">
+	<%= csrf_meta_tag %>
+	<%= javascript_include_tag :all %>
+	
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<!-- Mobile Specific Metas
+  	================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- CSS
+  	================================================== -->
+	<%= stylesheet_link_tag :all %>
+
+	
+	<!-- Favicons
+	================================================== -->
+
+
+	<!-- Fonts
+	================================================== -->	
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+	
+	<!--[if IE 7]>
+	  <link rel="stylesheet" href="stylesheets/ie7.css">
+	<![endif]-->
+		
+		
+	
+</head>
+<body class="skin-red">
+<div class="wrap">
+
+
+	<!-- Primary Page Layout
+	================================================== -->
+
+	<!-- Header -->
+	<%= render 'layouts/header' %>
+	<!-- end Header -->
+	
+	<!-- Main Container -->
+	<div class="container">
+			
+		<!-- #main content -->
+		<div class="single eleven columns"  id="main" role="main">
 			<%= yield %>
-			<%= render 'layouts/footer' %>
-		</div> <!-- end of bodycontent div -->
-  </body>
+		</div>		
+		<!-- end #main content layout -->
+			
+			
+		<!-- sidebar -->
+		<div class="sidebar four columns offset-by-one">			
+			<aside>
+				<h3>Travel more</h3>
+				<p>Get the top deals in a daily email now.</p>
+					
+				<%= link_to "Sign up now!", new_user_registration_path, :class => "button button-red button-full" %>
+									
+			</aside>
+		</div>
+		<!-- end .sidebar -->	
+			
+			
+			
+	</div>
+	<!-- end .container -->
+
+
+
+	<!-- footer -->
+	<%= render 'layouts/footer' %>
+	<!-- end footer -->
+	
+</div>
+<!-- end .wrap -->
+
+<!--[if (gte IE 6)&(lte IE 8)]>
+  <script type="text/javascript" src="javascripts/fix-ie.js"></script>
+<![endif]-->
+
+<!-- end Scripts -->
+
+
+<!-- End Document
+================================================== -->
+
+<!-- Agility - Responsive HTML5/CSS3 Template by SevenSpark http://agility-html.sevenspark.com -->
+
+</body>
 </html>

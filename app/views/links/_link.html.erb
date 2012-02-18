@@ -1,23 +1,23 @@
 <table class ="links">
 	<tr>
-		<td class ="arrow">
+		<td class ="vote_arrow">
 			<% if signed_in? %>
 				<% unless current_user.voted_for?(link) %>
-					<%= link_to image_tag("arrow.png", :alt => "Vote up"), vote_up_link_path(link), :method => :post, :remote => true %>
+					<%= link_to image_tag("icons/arrow_up.png", :alt => "Vote up"), vote_up_link_path(link), :method => :post, :remote => true %>
 				<% end %>
 			<% else %>
-				<%= link_to image_tag("arrow.png", :alt => "Vote up"), vote_up_link_path(link), :method => :post, :remote => true %>
+				<%= link_to image_tag("icons/arrow_up.png", :alt => "Vote up"), vote_up_link_path(link), :method => :post, :remote => true %>
 			<% end %>
 		</td>
-		<td class="title">
+		<td class="link_title">
 			<%= link_to link.description, link.url %>
-			<span class="domain">(<%= url=link.url;url = "http://" + link.url unless url =~ /^http/;URI.parse(url).host%>)</span>
+			<span class="link_domain">(<%= url=link.url;url = "http://" + link.url unless url =~ /^http/;URI.parse(url).host%>)</span>
 		</td>
 	</tr>	
 	<tr>
 		<td colspan="1">
 		</td>
-		<td class ="info">
+		<td class ="link_info">
 			<%= link.plusminus %> votes.
 			Posted by <%= link_to link.user.username, link.user %>
 			<%= time_ago_in_words(link.created_at) %> ago.

@@ -1,4 +1,17 @@
-<footer>
-	<%= link_to "About", about_path, :class => "not_current" %>
-  <%= link_to "Contact", contact_path, :class => "not_current" %>
+<footer id="colophon">
+	<div class="footer-upper container">
+		<%= link_to "About", about_path %>
+	  <%= link_to "Contact", contact_path %>
+	</div>
+	
+	<div id="footer-base">
+		<div class="container">
+			<div class="eight columns">
+				&copy; byodeal 2012
+			</div>
+			<div class="eight columns far-edge">
+				Made in Philly.
+			</div>
+		</div>
+	</div>
 </footer>

@@ -9,7 +9,7 @@ class Link < ActiveRecord::Base
   
   acts_as_voteable
   
-  #default_scope :order => 'links.created_at DESC'
+  default_scope :order => 'links.created_at DESC'
   
   scope :sorted_by_hotness, :order => 'links.hotness DESC'
   

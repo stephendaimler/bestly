@@ -2,121 +2,23 @@
 CSS for BYODEAL
 */
 
-body {
-	font-family: Verdana, Helvetica, Arial, sans-serif;
-	background-color: #e2edff;
-	background: url(/images/fabric_plaid.png);
-	line-height: 125%;
-	padding: 0px;
-}
-
-h1, h2, h3 {
-	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-}
-
-h1 {
-	font-size: x-large;
-	padding-top: 2em;
-	padding-bottom: .2em;
-	padding-left: .4em;
-	padding-right: .4em;
-	background-color: red;
-}
-
-li {
-	font-size: small;
-}
-
-p {
-	font-size: small;
-}
-
-#tagline p { 
-	font-style: italic;
-	font-family: Georgia, Times, serif;
-}
 
 /*
 Links
 */
 
-a {
-	color: black;	
-}
-
-a:link {
-	color: black;
-}
-
-a:visited {
-	color: gray;
-}
-
-a:hover {
-}
-
-a:active {
-	color: gray;
-}
-
-a.current {
-	color: white;
-	background-color: none;
-}
-
-a.not_current {
-	color: black;
-	background-color: none;
-}
-
-.title a:link {
-	color: black;
-	text-decoration: none;
-}
-
-.info a:link {
-	color: gray;
-	text-decoration: none;
-}
-
-.info a:hover {
-	text-decoration: underline;
-}
 
 /*
 Positioning
 */
 
-#bodycontent, header, nav, #signin {
+#signin {
 	position: absolute;
-}
-
-header {
-	left: 20px;
-	right: 20px;
-}
-
-nav {
-	top: 65px;
-	left: 130px;
 }
 
 #signin {
 	top: 65px;
 	right: 25px;
-}
-
-#bodycontent {
-	top: 100px;
-	left: 20px;
-	right: 20px;
-}
-
-footer {
-	position: relative;
-	top: 10px;
-	text-align: center;
-	padding-bottom: 2em;
 }
 
 #user_submissions {	
@@ -131,16 +33,14 @@ table.links {
 	border-collapse: collapse;
 }
 
-.title {
+.link_title {
 	font-size: 10pt;
 }
 
-.domain {
-	color: gray;
+.link_domain {
 	font-size: 8pt;
 }
 
-.info {
-	color: gray;
+.link_info {
 	font-size: 7pt;
 }
