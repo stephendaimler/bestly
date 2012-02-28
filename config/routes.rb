@@ -1,6 +1,6 @@
 Bestly::Application.routes.draw do
 
-  devise_for :users
+  devise_for :users, :controllers => { :omniauth_callbacks => "users/omniauth_callbacks" }
 #             :controllers => {:sessions => 'devise/sessions'}, 
 #             :skip => [:sessions] do
 #    get '/login' => 'devise/sessions#new', :as => :new_user_session
@@ -11,7 +11,7 @@ Bestly::Application.routes.draw do
   resources :users
   resources :links do
     member do
-      get :vote_up
+      get :vote_up, :vote_down
     end
   end
 

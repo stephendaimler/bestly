@@ -7,6 +7,7 @@ gem 'will_paginate', '3.0.pre2'
 gem 'devise'
 gem 'thumbs_up'
 gem 'jquery-rails', '>= 1.0.12'
+gem "omniauth-facebook"
 
 group :development do
   gem 'rspec-rails', '2.6.1'

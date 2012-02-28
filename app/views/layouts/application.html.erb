@@ -30,7 +30,7 @@
 	
 	<!-- Favicons
 	================================================== -->
-
+	<link rel="shortcut icon" href="images/byod.ico">
 
 	<!-- Fonts
 	================================================== -->	
@@ -60,6 +60,9 @@
 			
 		<!-- #main content -->
 		<div class="single eleven columns"  id="main" role="main">
+			<% flash.each do |key, value| %>
+				<div class="notification notification-<%= key %>"><%= value %></div>
+			<% end %>
 			<%= yield %>
 		</div>		
 		<!-- end #main content layout -->
@@ -67,13 +70,14 @@
 			
 		<!-- sidebar -->
 		<div class="sidebar four columns offset-by-one">			
-			<aside>
-				<h3>Travel more</h3>
-				<p>Get the top deals in a daily email now.</p>
+			<% unless signed_in? %>
+				<aside>
+					<h3>Travel more</h3>
+					<p>Get the top deals in a daily email now.</p>
 					
-				<%= link_to "Sign up now!", new_user_registration_path, :class => "button button-red button-full" %>
-									
-			</aside>
+					<%= link_to "Sign up now!", new_user_registration_path, :class => "button button-red button-full" %>			
+				</aside>
+			<% end %>		
 		</div>
 		<!-- end .sidebar -->	
 			

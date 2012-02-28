@@ -44,3 +44,11 @@ table.links {
 .link_info {
 	font-size: 7pt;
 }
+
+.index_number {
+	padding-right: .25em;
+}
+
+.vote_arrow {
+	padding-right: .25em;
+}

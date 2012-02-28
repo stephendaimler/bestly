@@ -1889,34 +1889,34 @@ table{
 /* #Alert Boxes
 ============================================ */
 
-.alert{
+.notification{
 	padding:10px 10px 10px 40px;
 	font-size:11px;
 	margin:20px 0px 10px 0px;
 }
-.alert p,
-.alert h6,
-.alert h5,
-.alert h4{
+.notification p,
+.notification h6,
+.notification h5,
+.notification h4{
 	color:inherit;
 }
-.alert h6{
+.notification h6{
 	font-weight:bold;
 }
-.alert p{
+.notification p{
 	margin-bottom:0;
 }
-.alert-notification{
+.notification-notice{
 	color: #4F8A10;
 	background: #DFF2BF url(../images/icons/tick_green.png) 15px 13px no-repeat;
 	border: 1px solid #4F8A10;
 }
-.alert-warning{
+.notification-warning{
 	border:1px solid #DDB723;	
 	background: #FFEA73 url(../images/icons/warning.png) 15px 13px no-repeat;
 	color: #A63C00;
 }
-.alert-error{
+.notification-alert{
 	color: #D8000C;
 	background: #FFBABA url(../images/icons/cross.png) 15px 13px no-repeat;
 	border: 1px solid #D8000C;	
@@ -2102,8 +2102,8 @@ a.social-media.tooltip-container{
 #colophon{
 	background:#EAEAEA url(../images/bkgs/stripes_tiny_05.png) 0 1px repeat;
 	border-top:2px solid #ddd;
-	
 }
+
 #colophon .footer-upper{
 	padding:2em 0;
 	border-top:4px solid #ddd;
@@ -2124,6 +2124,7 @@ a.social-media.tooltip-container{
 	font-style:italic;
 	letter-spacing:0px;
 }
+
 #colophon .social-media{
 	font-size:.8em;
 	background:#fff;
