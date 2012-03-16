@@ -29,7 +29,7 @@ class LinksController < ApplicationController
   
   def vote_up
     begin
-      current_user.vote_for(@link = Link.find(params[:id]))
+      current_user.vote_exclusively_for(@link = Link.find(params[:id]))
       @link.update_hotness!
       respond_to do |format|
         format.js
@@ -42,7 +42,7 @@ class LinksController < ApplicationController
   
   def vote_down
     begin
-      current_user.vote_against(@link = Link.find(params[:id]))
+      current_user.vote_exclusively_against(@link = Link.find(params[:id]))
       @link.update_hotness!
       respond_to do |format|
         format.js

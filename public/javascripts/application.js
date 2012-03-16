@@ -2,7 +2,17 @@
 // This file is automatically included by javascript_include_tag :defaults
 
 $(document).ready(function() {
-	$(".arrow").click(function(){
-		$(".arrow").hide();
+	$('a.up_arrow:not(.selected)').mouseenter(function(){
+		$(this).toggleClass('selected');
+	});
+	$('a.up_arrow:not(.selected)').mouseleave(function(){
+		$(this).toggleClass('selected');
+	});	
+	$('a.down_arrow:not(.selected)').mouseenter(function(){
+		$(this).toggleClass('selected');
+	});
+	$('a.down_arrow:not(.selected)').mouseleave(function(){
+		$(this).toggleClass('selected');
 	});
 });
+

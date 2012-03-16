@@ -1,10 +1,19 @@
+<%= div_for (link) do %>
 <table class ="links">
 	<tr>
-		<td class ="index_number">
+		<td style="width:20px; text-align:right" class ="index_number">
 		<%= link_counter + 1 %>.
 		</td>	
 		<td class ="vote_arrow">
-			<%= link_to image_tag("icons/arrow_up.png", :alt => "Vote up"), vote_up_link_path(link), :method => :post, :remote => true %>
+		<% if signed_in? %>	
+			<% if current_user.voted_for?(link) %>
+				<%= link_to "Vote up", vote_up_link_path(link), :class => "up_arrow selected", :method => :post, :remote => true %>
+			<% else %>
+				<%= link_to "Vote up", vote_up_link_path(link), :class => "up_arrow", :method => :post, :remote => true %>
+			<% end %>
+		<% else %>	
+			<%= link_to "Vote up", vote_up_link_path(link), :class => "up_arrow", :method => :post, :remote => true %>
+		<% end %>
 		</td>
 		<td class="link_title">
 			<%= link_to link.description, link.url %>
@@ -15,10 +24,18 @@
 		<td colspan="1">
 		</td>
 		<td class ="vote_arrow">
-			<%= link_to image_tag("icons/arrow_down.png", :alt => "Vote down"), vote_down_link_path(link), :method => :post, :remote => true %>
+		<% if signed_in? %>	
+			<% if current_user.voted_against?(link) %>
+				<%= link_to "Vote down", vote_down_link_path(link), :class => "down_arrow selected", :method => :post, :remote => true %>
+			<% else %>
+				<%= link_to "Vote down", vote_down_link_path(link), :class => "down_arrow", :method => :post, :remote => true %>
+			<% end %>
+		<% else %>
+			<%= link_to "Vote down", vote_down_link_path(link), :class => "down_arrow", :method => :post, :remote => true %>
+		<% end %>	
 		</td>
 		<td class ="link_info">
-			<%= link.plusminus %> votes.
+			<span class="link_votes"><%= link.plusminus %> votes.</span>
 			Posted by <%= link_to link.user.username, link.user %>
 			<%= time_ago_in_words(link.created_at) %> ago.
 		</td>
@@ -26,3 +43,8 @@
 	<tr style="height:5px">
 	</tr>
 </table>
+<% end %>
+
+<!-- <a href="<%= vote_up_link_path(link) %>" class="ratelink" updown="up" theid="<%= link.id %>"><img src = "images/icons/arrow_up.png"></a> -->
+
+<!-- <a href="<%= vote_down_link_path(link) %>" class="ratelink" updown="down" theid="<%= link.id %>"><img src = "images/icons/arrow_down.png"></a> -->

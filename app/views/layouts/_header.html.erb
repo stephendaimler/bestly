@@ -10,27 +10,27 @@
 		<nav id="main-nav" class="two-thirds column omega">
 			<a href="#main-nav-menu" class="mobile-menu-button button">+ Menu</a>
 			<ul id="main-nav-menu" class="nav-menu">
-				<li id="nav-home"  >
+				<li id="nav-home"  class=<%= current_page?(root_path) ? "current" : "not_current" %>>
 					<%= link_to "Hot deals", root_path %>
 				</li>
-				<li id="nav-new"  >
+				<li id="nav-new"  class=<%= current_page?(links_path) ? "current" : "not_current" %>>
 					<%= link_to "New deals", links_path %>
 				</li>
-				<li id="nav-submit" >
+				<li id="nav-submit" class=<%= current_page?(new_link_path) ? "current" : "not_current" %>>
 					<%= link_to "Submit a deal", new_link_path %>				
 				</li>
 				<% if signed_in? %>
-				<li id="nav-profile" >
+				<li id="nav-profile" class=<%= current_page?(current_user) ? "current" : "not_current" %>>
 					<%= link_to "Profile", current_user %>
 				</li>
 				<li id="nav-signout" >
 					<%= link_to "Sign out", destroy_user_session_path %>
 				</li>  
 			  <% else %>
-				<li id="nav-signup" >
+				<li id="nav-signup" class=<%= current_page?(new_user_registration_path) ? "current" : "not_current" %>>
 			   	<%= link_to "Sign up", new_user_registration_path %>
 				</li>	
-				<li id="nav-signin" >
+				<li id="nav-signin" class=<%= current_page?(new_user_session_path) ? "current" : "not_current" %>>
 					<%= link_to "Sign in", new_user_session_path %>
 				</li>
 			  <% end %>	

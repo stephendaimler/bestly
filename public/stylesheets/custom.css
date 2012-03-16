@@ -52,3 +52,32 @@ table.links {
 .vote_arrow {
 	padding-right: .25em;
 }
+
+/*
+Arrows
+*/
+
+a.up_arrow {
+	display: block;
+	text-indent: -999em;
+	width: 14px;
+	height: 13.5px;
+	background: transparent url(/images/icons/arrow_up_sprite.png) no-repeat center top;
+}
+
+a.up_arrow.selected {
+	background-position: center bottom;
+}
+
+a.down_arrow {
+	display: block;
+	text-indent: -999em;
+	width: 14px;
+	height: 14px;
+	background: transparent url(/images/icons/arrow_down_sprite.png) no-repeat center top;
+}
+
+a.down_arrow.selected {
+	background-position: center bottom;
+}
+

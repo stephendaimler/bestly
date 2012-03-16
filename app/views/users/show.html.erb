@@ -6,7 +6,7 @@ Points: <%= @user.karma %><br />
 <%= link_to "Settings", edit_user_registration_path %><br />
 <% end %>
 <% if current_user.try(:admin?) %>
-<%= link_to "Delete", @destroy_user, :method => :delete, :confirm => "You sure?", :title => "Delete #{@user.username}" %>
+<%= link_to "Delete", destroy_user_path, :method => :delete, :confirm => "You sure?", :title => "Delete #{@user.username}" %>
 <% end %>
 
 <div id= "user_submissions">
