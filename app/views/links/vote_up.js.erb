@@ -1,5 +1,5 @@
 $(document).ready(function() {
-	$('#link_<%= @link.id %> a.up_arrow:not(.selected)').toggleClass('selected');
+	$('#link_<%= @link.id %> a.up_arrow').toggleClass('selected');
 	$('#link_<%= @link.id %> a.down_arrow.selected').toggleClass('selected');
 	$("#link_<%= @link.id %> .link_votes").html('<%= "#{@link.plusminus} votes." %>');
 });
