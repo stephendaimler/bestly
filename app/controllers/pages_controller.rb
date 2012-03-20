@@ -20,6 +20,7 @@ class PagesController < ApplicationController
   end
 end
 
+
 #unless @link<30
   #@links[rand(30)].update_hotness!
 #end
