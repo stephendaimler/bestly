@@ -1,5 +1,7 @@
 class LinksController < ApplicationController
-  before_filter :authenticate_user!, :only => [:new, :create, :vote_up, :vote_down]
+  before_filter :authenticate_user!, :only => [:new, :create, :destroy]
+  before_filter :admin_user, :only => :destroy
+  before_filter :custom_auth, :only => [:vote_up, :vote_down]
   
   def index
     @title = "New links"
@@ -23,6 +25,12 @@ class LinksController < ApplicationController
     else
       render 'pages/home'
     end
+  end
+  
+  def destroy
+    Link.find(params[:id]).destroy
+    flash[:notice] = "Link destroyed."
+    redirect_to root_path
   end
   
 #       render :nothing => true, :status => 200  
@@ -60,6 +68,13 @@ class LinksController < ApplicationController
       end
     rescue ActiveRecord::RecordInvalid
       render :nothing => true, :status => 404
+    end
+  end
+  
+  def custom_auth
+    if not signed_in?
+      flash[:alert] = "You must sign in or sign up to vote."
+      render "login_redirect.js.erb"
     end
   end
 end

@@ -38,13 +38,12 @@
 			<span class="link_votes"><%= link.plusminus %> votes.</span>
 			Posted by <%= link_to link.user.username, link.user %>
 			<%= time_ago_in_words(link.created_at) %> ago.
+			<% if current_user.try(:admin?) %>
+			<%= link_to "Delete", link, :method => :delete, :confirm => "You sure?", :title => "Delete #{link.description}" %>
+			<% end %>
 		</td>
 	</tr>
 	<tr style="height:5px">
 	</tr>
 </table>
 <% end %>
-
-<!-- <a href="<%= vote_up_link_path(link) %>" class="ratelink" updown="up" theid="<%= link.id %>"><img src = "images/icons/arrow_up.png"></a> -->
-
-<!-- <a href="<%= vote_down_link_path(link) %>" class="ratelink" updown="down" theid="<%= link.id %>"><img src = "images/icons/arrow_down.png"></a> -->
