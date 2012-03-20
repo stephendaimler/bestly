@@ -5,7 +5,7 @@ gem 'sqlite3', '1.3.3', :group => :development
 gem 'gravatar_image_tag', '1.0.0.pre2'
 gem 'will_paginate', '3.0.pre2'
 gem 'devise'
-gem 'thumbs_up'
+gem 'thumbs_up', '0.4.6'
 gem 'jquery-rails', '>= 1.0.12'
 gem "omniauth-facebook"
 gem "recaptcha", :require => "recaptcha/rails"

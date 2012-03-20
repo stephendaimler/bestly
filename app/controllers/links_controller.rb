@@ -39,7 +39,7 @@ class LinksController < ApplicationController
     @link = Link.find(params[:id])
     begin
       if current_user.voted_for?(@link)
-        current_user.unvote_for(@link)
+        current_user.clear_votes(@link)
       else
         current_user.vote_exclusively_for(@link)
       end
@@ -57,7 +57,7 @@ class LinksController < ApplicationController
     @link = Link.find(params[:id])
     begin
       if current_user.voted_against?(@link)
-        current_user.unvote_for(@link)
+        current_user.clear_votes(@link)
       else
         current_user.vote_exclusively_against(@link)
       end
