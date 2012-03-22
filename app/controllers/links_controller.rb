@@ -77,4 +77,8 @@ class LinksController < ApplicationController
       render "login_redirect.js.erb"
     end
   end
+  
+  def admin_user
+    redirect_to(root_path) unless current_user.admin?
+  end
 end
