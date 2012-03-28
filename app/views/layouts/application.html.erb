@@ -13,7 +13,7 @@
   <title><%= title %></title>
 	<meta name="description" content="Byodeal is a community of travel lovers sharing travel deals">
 	<%= csrf_meta_tag %>
-	<%= javascript_include_tag :all %>
+	<%= javascript_include_tag :all, :cache => true %>
 	
 	<!--[if lt IE 9]>
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -96,7 +96,7 @@
 <!-- end .wrap -->
 
 <!--[if (gte IE 6)&(lte IE 8)]>
-  <script type="text/javascript" src="javascripts/fix-ie.js"></script>
+	<%= stylesheet_link_tag "fix-ie" %>
 <![endif]-->
 
 <!-- end Scripts -->

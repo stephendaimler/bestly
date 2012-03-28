@@ -52,17 +52,7 @@ jQuery(document).ready(function($){
 	});
 	
 	/* MOBILE MENU */
-    $('.mobile-menu-button').click(function(e){
-    	e.preventDefault();
-    	var $menu = $($(this).attr('href'));
-    	$menu.toggleClass('menu-open'); //toggle()
-    	
-    	if(typeof $navClose !== 'undefined' && !$menu.hasClass('menu-open') ){
-    		console.log('hide');
-    		$navClose.hide();
-    	}
-    });
-	
+
 	/* Expander for featured images */
 	$('.single-post-feature-expander').click(function(){
 		$('.featured-image').toggleClass('full-width');
