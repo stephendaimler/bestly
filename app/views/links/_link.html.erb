@@ -2,7 +2,7 @@
 <table class ="links">
 	<tr>
 		<td style="width:20px; text-align:right" class ="index_number">
-		<%= link_counter + 1 %>.
+		<%= @link_counter += 1 %>.
 		</td>	
 		<td class ="vote_arrow">
 		<% if signed_in? %>	

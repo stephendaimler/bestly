@@ -4,8 +4,11 @@ class LinksController < ApplicationController
   before_filter :custom_auth, :only => [:vote_up, :vote_down]
   
   def index
+    @page = params[:page] || 1
+    @per_page = params[:per_page] || 30
+    @link_counter = (@page.to_i - 1) * @per_page.to_i
     @title = "New links"
-    @links = Link.paginate(:page => params[:page])
+    @links = Link.paginate(:page => @page, :per_page=>@per_page)
   end
 
   def show
@@ -18,9 +21,10 @@ class LinksController < ApplicationController
   end
   
   def create
-    @link  = current_user.links.build(params[:link])
+    @user = current_user
+    @link  = @user.links.build(params[:link])
     if @link.save
-      current_user.vote_for(@link)
+      @user.vote_for(@link)
       redirect_to links_path
     else
       render 'pages/home'

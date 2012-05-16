@@ -1,9 +1,12 @@
 class PagesController < ApplicationController
   
   def home
+    @page = params[:page] || 1
+    @per_page = params[:per_page] || 30
+    @link_counter = (@page.to_i - 1) * @per_page.to_i
     @title = "Home"
     @link = Link.count
-    @links = Link.sorted_by_hotness.paginate(:page => params[:page])
+    @links = Link.sorted_by_hotness.paginate(:page => @page, :per_page=>@per_page)
     num_links = Link.count
     if num_links > 0
       num_to_choose = [num_links, 30].min
@@ -20,7 +23,3 @@ class PagesController < ApplicationController
   end
 end
 
-
-#unless @link<30
-  #@links[rand(30)].update_hotness!
-#end
