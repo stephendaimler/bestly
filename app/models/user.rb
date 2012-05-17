@@ -15,7 +15,7 @@ class User < ActiveRecord::Base
   has_karma(:links, :as => :user)
   
   def self.send_daily_email
-    User.each do |user|
+      user = User.all
       UserMailer.daily_deals(user).deliver
     end
   end  
