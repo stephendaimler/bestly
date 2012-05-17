@@ -17,6 +17,5 @@ class User < ActiveRecord::Base
   def self.send_daily_email
       user = User.all
       UserMailer.daily_deals(user).deliver
-    end
   end  
 end
