@@ -1,6 +1,4 @@
 desc "run daily tasks"
 task :daily => :environment do
- User.each do |user|
-   UserMailer.daily_deals(user).deliver
- end
+ User.send_daily_email
 end
