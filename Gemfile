@@ -9,6 +9,7 @@ gem 'thumbs_up', '0.4.6'
 gem 'jquery-rails', '>= 1.0.12'
 gem "omniauth-facebook"
 gem "recaptcha", :require => "recaptcha/rails"
+gem 'rake' , '0.8.7'
 
 group :development do
   gem 'rspec-rails', '2.6.1'
