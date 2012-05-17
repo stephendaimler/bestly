@@ -14,7 +14,7 @@ class User < ActiveRecord::Base
   acts_as_voter
   has_karma(:links, :as => :user)
   
-  def send_daily_email
+  def self.send_daily_email
     User.each do |user|
       UserMailer.daily_deals(user).deliver
     end
