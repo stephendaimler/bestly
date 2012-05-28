@@ -8,7 +8,7 @@ class LinksController < ApplicationController
     @per_page = params[:per_page] || 30
     @link_counter = (@page.to_i - 1) * @per_page.to_i
     @title = "New links"
-    @links = Link.paginate(:page => @page, :per_page=>@per_page)
+    @links = Link.link_posted.paginate(:page => @page, :per_page=>@per_page)
   end
 
   def show
@@ -21,8 +21,14 @@ class LinksController < ApplicationController
   end
   
   def create
-    @user = current_user
-    @link  = @user.links.build(params[:link])
+    #@link  = @user.links.build(params[:link])
+    @link = Link.new(params[:link])
+    if @link.schedule_link?
+      @link.user = User.poster[rand(User.poster.count)]
+    else
+      @link.user = current_user
+      update_attributes :link_posted => true
+    end
     if @link.save
       @user.vote_for(@link)
       redirect_to links_path

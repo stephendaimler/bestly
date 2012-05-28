@@ -10,18 +10,21 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120120020203) do
+ActiveRecord::Schema.define(:version => 20120526151414) do
 
   create_table "links", :force => true do |t|
     t.string   "url"
     t.string   "description"
     t.integer  "user_id"
-    t.integer  "points",      :default => 0
+    t.integer  "points",        :default => 0
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.integer  "up_votes",    :default => 0, :null => false
-    t.integer  "down_votes",  :default => 0, :null => false
+    t.integer  "up_votes",      :default => 0, :null => false
+    t.integer  "down_votes",    :default => 0, :null => false
     t.float    "hotness"
+    t.boolean  "schedule_link"
+    t.datetime "post_link_at"
+    t.boolean  "link_posted"
   end
 
   add_index "links", ["hotness"], :name => "index_links_on_hotness"
@@ -44,6 +47,7 @@ ActiveRecord::Schema.define(:version => 20120120020203) do
     t.integer  "up_votes",                              :default => 0,     :null => false
     t.integer  "down_votes",                            :default => 0,     :null => false
     t.boolean  "admin",                                 :default => false
+    t.boolean  "poster",                                :default => false
   end
 
   add_index "users", ["email"], :name => "index_users_on_email", :unique => true

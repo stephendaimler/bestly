@@ -17,6 +17,12 @@ $(document).ready(function(){
 		$(this).toggleClass('selected');
 	});
 	
+	/* TIME PICKER */
+	
+	$('#link_post_link_at').datetimepicker({
+		ampm: true
+	});
+	
 	/* MOBILE MENU */
 	$('.mobile-menu-button').click(function(e){
     	e.preventDefault();

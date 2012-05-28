@@ -210,7 +210,7 @@ strong { color:inherit; }
 ================================================ */
 #header{
 	position:relative;
-	z-index:20;
+	z-index:0;
 }
 #header #header-inner{
 	border-bottom:1px solid #efefef;

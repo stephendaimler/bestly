@@ -1,5 +1,5 @@
 class Link < ActiveRecord::Base
-  attr_accessible :description, :url
+  attr_accessible :description, :url, :schedule_link, :post_link_at, :link_posted
   
   belongs_to :user
   
@@ -13,6 +13,8 @@ class Link < ActiveRecord::Base
   
   scope :sorted_by_hotness, :order => 'links.hotness DESC'
   
+  scope :link_posted, where(:link_posted => true)
+  
   def update_hotness!
     self.hotness = hotness_score
     self.save
@@ -22,5 +24,11 @@ class Link < ActiveRecord::Base
     gravity = 1.8
     age_in_hours = ((Time.now - self.created_at)/3600).round
     (self.plusminus - 1) / (age_in_hours+2) ** gravity
+  end
+  
+  def deliver_link
+    if !link_posted? && Time.zone.now >= post_link_at
+    update_attributes :link_posted => true
+    end
   end
 end
