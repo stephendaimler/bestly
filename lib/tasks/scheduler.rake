@@ -7,5 +7,7 @@ end
 
 desc "post scheduled links"
 task :hourly_post_links => :environment do
-  Link.deliver_link
+  Link.link_not_posted.each do |link|
+    link.deliver_link
+  end
 end

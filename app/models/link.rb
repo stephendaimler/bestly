@@ -14,6 +14,7 @@ class Link < ActiveRecord::Base
   scope :sorted_by_hotness, :order => 'links.hotness DESC'
   
   scope :link_posted, where(:link_posted => true)
+  scope :link_not_posted, where(:link_posted => false)
   
   def update_hotness!
     self.hotness = hotness_score
@@ -27,7 +28,7 @@ class Link < ActiveRecord::Base
   end
   
   def deliver_link
-    if !link_posted? && Time.zone.now >= post_link_at
+    if Time.zone.now >= post_link_at
     update_attributes :link_posted => true
     end
   end
