@@ -18,6 +18,9 @@
   <p><%= f.label :current_password %> <i>(we need your current password to confirm your changes)</i><br />
   <%= f.password_field :current_password %></p>
 
+	<p><%= f.label :daily_email, "Get a daily travel deal email (coming soon)" %><br />
+  <%= f.check_box :daily_email, :checked => true %></p>
+
   <p><%= f.submit "Update" %></p>
 <% end %>
 

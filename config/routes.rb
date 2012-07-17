@@ -1,6 +1,7 @@
 Bestly::Application.routes.draw do
 
-  devise_for :users, :controllers => {:registrations => "registrations"}
+  devise_for :users 
+#              :controllers => {:registrations => "registrations"}
 #             :controllers => {:sessions => 'devise/sessions'}, 
 #             :skip => [:sessions] do
 #    get '/login' => 'devise/sessions#new', :as => :new_user_session
@@ -8,7 +9,15 @@ Bestly::Application.routes.draw do
 #    get '/signout' => 'devise/sessions#destroy', :as => :destroy_user_session
 #    get '/signup' => 'devise/registrations#new', :as => :new_user_registration
 
-  resources :users
+#  match '/check_username/:username', :to => 'users#check_username'
+ 
+  resources :users do
+    collection do
+      get 'check_username'
+      get 'check_email'
+    end
+  end
+  
   resources :links do
     member do
       post :vote_up 
@@ -16,7 +25,6 @@ Bestly::Application.routes.draw do
     end
   end
 
-  match '/contact', :to => 'pages#contact'
   match '/about',   :to => 'pages#about'
   match '/submit', :to => 'links#new'
   

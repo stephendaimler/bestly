@@ -4,20 +4,22 @@
   <%= devise_error_messages! %>
 
 	<p><%= f.label :username %><br />
-  <%= f.text_field :username %></p>
+ 	<%= f.text_field :username %></p>
 
-  <p><%= f.label :email %><br />
-  <%= f.email_field :email %></p>
+ 	<p><%= f.label :email %><br />
+ 	<%= f.email_field :email %></p>
 
-  <p><%= f.label :password %><br />
-  <%= f.password_field :password %></p>
+ 	<p><%= f.label :password %><br />
+ 	<%= f.password_field :password %></p>
 
-  <p><%= f.label :password_confirmation %><br />
-  <%= f.password_field :password_confirmation %></p>
+ 	<p><%= f.label :password_confirmation %><br />
+ 	<%= f.password_field :password_confirmation %></p>
 
-	<%= recaptcha_tags %>
-
-  <p><%= f.submit "Sign up" %></p>
+	<p><%= f.label :daily_email, "Get a daily travel deal email (coming soon)" %><br />
+  <%= f.check_box :daily_email, :checked => true %></p>
+	
+<!--	<%= recaptcha_tags %> -->
+ 	<p><%= f.submit "Sign up" %></p>
 <% end %>
 
 <%= render :partial => "devise/shared/links" %>

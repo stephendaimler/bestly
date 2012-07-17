@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120526151414) do
+ActiveRecord::Schema.define(:version => 20120715231538) do
 
   create_table "links", :force => true do |t|
     t.string   "url"
@@ -48,6 +48,7 @@ ActiveRecord::Schema.define(:version => 20120526151414) do
     t.integer  "down_votes",                            :default => 0,     :null => false
     t.boolean  "admin",                                 :default => false
     t.boolean  "poster",                                :default => false
+    t.boolean  "daily_email",                           :default => false
   end
 
   add_index "users", ["email"], :name => "index_users_on_email", :unique => true

@@ -16,7 +16,7 @@
 		<% end %>
 		</td>
 		<td class="link_title">
-			<%= link_to link.description, link.url %>
+			<%= link_to link.description, "#{url=link.url;url = "http://" + link.url unless url =~ /^http/;url}" %>
 			<span class="link_domain">(<%= url=link.url;url = "http://" + link.url unless url =~ /^http/;URI.parse(url).host%>)</span>
 		</td>
 	</tr>	

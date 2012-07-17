@@ -99,3 +99,15 @@ Time Picker
 	width: 130px;
 }
 
+/*
+Validation
+*/
+
+.error.valid {
+	text-indent: -999em;
+	background: url(/images/icons/tick_green.png) no-repeat ;
+}
+
+.error {
+	color:#d83f28;
+}

@@ -32,6 +32,7 @@ GEM
     arel (2.0.10)
     bcrypt-ruby (3.0.1)
     builder (2.1.2)
+    client_side_validations (3.1.4)
     columnize (0.3.6)
     devise (1.5.3)
       bcrypt-ruby (~> 3.0)
@@ -144,6 +145,7 @@ PLATFORMS
 
 DEPENDENCIES
   annotate (= 2.4.0)
+  client_side_validations
   devise
   factory_girl_rails (= 1.0)
   faker (= 0.3.1)

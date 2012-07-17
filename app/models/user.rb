@@ -5,11 +5,11 @@ class User < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable
 
   # Setup accessible (or protected) attributes for your model
-  attr_accessible :email, :password, :password_confirmation, :remember_me, :username
+  attr_accessible :email, :password, :password_confirmation, :remember_me, :username, :daily_email
   
   has_many :links, :dependent => :destroy
   
-  validates :username, :uniqueness => { :case_sensitive => false }
+  validates :username, :uniqueness => { :case_sensitive => false }, :length => { :maximum => 15 }
   
   acts_as_voter
   has_karma(:links, :as => :user)

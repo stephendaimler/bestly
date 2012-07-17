@@ -8,12 +8,12 @@
 		<p><%= f.label :post_link_at, "Post link at" %><br />
 	  <%= f.text_field :post_link_at %></p>
 	<% end %>	
-
+	
 		<p><%= f.label :description %><br />
-    <%= f.text_field :description, :size => 75 %></p>
-
+  	<%= f.text_field :description %></p><span id="char-count">100</span>
+<!-- :class => "maxlength" -->
 		<p><%= f.label :url %><br />
-    <%= f.text_field :url, :size => 75 %></p>
+  	<%= f.text_field :url %></p>
 
     <p><%= f.submit "Submit" %></p>
 

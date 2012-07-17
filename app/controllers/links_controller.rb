@@ -27,10 +27,10 @@ class LinksController < ApplicationController
       @link.user = User.poster[rand(User.poster.count)]
     else
       @link.user = current_user
-      update_attributes :link_posted => true
+      @link.update_attributes(:link_posted => true)
     end
     if @link.save
-      @user.vote_for(@link)
+      @link.user.vote_for(@link)
       redirect_to links_path
     else
       render 'pages/home'
