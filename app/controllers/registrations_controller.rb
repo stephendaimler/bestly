@@ -11,4 +11,4 @@ class RegistrationsController < Devise::RegistrationsController
   #      render_with_scope :new
   #    end
   #  end
-  #end
+end
