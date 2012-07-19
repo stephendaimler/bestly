@@ -15,5 +15,10 @@ class User < ActiveRecord::Base
   has_karma(:links, :as => :user)
   
   scope :poster, where(:poster => true)
-  
+  scope :by_username, lambda{|u|
+    where("lower(username) = lower(?)", u)
+  }
+  scope :by_email, lambda{|u|
+    where("lower(email) = lower(?)", u)
+  }
 end
