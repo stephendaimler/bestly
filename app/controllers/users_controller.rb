@@ -24,14 +24,14 @@ class UsersController < ApplicationController
   end
   
   def check_username
-    @user = User.find_by_username(params[:user][:username])
+    @user = User.by_username(params[:user][:username]).first
     respond_to do |format|
       format.json {render :json  => !@user}
     end
   end
   
   def check_email
-    @user = User.find_by_email(params[:user][:email])
+    @user = User.by_email(params[:user][:email]).first
     respond_to do |format|
       format.json {render :json  => !@user}
     end
