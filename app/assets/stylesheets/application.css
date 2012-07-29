@@ -1,0 +1,114 @@
+/*
+*= require_self
+*= require_tree .
+*/
+
+
+/*
+Links
+*/
+
+
+/*
+Positioning
+*/
+
+#signin {
+	position: absolute;
+}
+
+#signin {
+	top: 65px;
+	right: 25px;
+}
+
+#user_submissions {	
+	padding-top:  1em;
+}
+
+/*
+Tables
+*/
+
+table.links {
+	border-collapse: collapse;
+}
+
+.link_title {
+	font-size: 10pt;
+}
+
+.link_domain {
+	font-size: 8pt;
+}
+
+.link_info {
+	font-size: 7pt;
+}
+
+.index_number {
+	padding-right: .25em;
+}
+
+.vote_arrow {
+	padding-right: .25em;
+}
+
+/*
+Arrows
+*/
+
+a.up_arrow {
+	display: block;
+	text-indent: -999em;
+	width: 14px;
+	height: 13.5px;
+	background: transparent url(/assets/icons/arrow_up_sprite.png) no-repeat center top;
+}
+
+a.up_arrow.selected {
+	background-position: center bottom;
+}
+
+a.down_arrow {
+	display: block;
+	text-indent: -999em;
+	width: 14px;
+	height: 14px;
+	background: transparent url(/assets/icons/arrow_down_sprite.png) no-repeat center top;
+}
+
+a.down_arrow.selected {
+	background-position: center bottom;
+}
+
+/*
+Time Picker
+*/
+
+.ui-timepicker-div .ui-widget-header { margin-bottom: 8px; }
+.ui-timepicker-div dl { text-align: left; }
+.ui-timepicker-div dl dt { height: 25px; margin-bottom: -25px; }
+.ui-timepicker-div dl dd { margin: 0 10px 10px 65px; }
+.ui-timepicker-div td { font-size: 90%; }
+.ui-tpicker-grid-label { background: none; border: none; margin: 0; padding: 0; }
+
+/*
+Time Picker
+*/
+#link_post_link_at {
+	width: 130px;
+}
+
+/*
+Validation
+*/
+
+.error.valid {
+	text-indent: -999em;
+	background: url(/assets/icons/tick_green.png) no-repeat ;
+}
+
+.error {
+	color:#d83f28;
+}
