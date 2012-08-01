@@ -17,11 +17,13 @@ group :assets do
 end
 
 group :development do
-  gem 'sqlite3', '1.3.5'
+  gem 'pg'
   gem 'rspec-rails', '2.6.1'
   gem 'annotate', '2.4.0'
   gem 'faker', '0.3.1'
 	gem 'ruby-debug19'
+	gem 'sqlite3'
+	gem 'taps'
 end
 
 group :test do
