@@ -9,6 +9,7 @@ gem 'jquery-rails', '>= 1.0.12'
 gem 'omniauth-facebook'
 gem 'recaptcha', :require => 'recaptcha/rails'
 gem 'client_side_validations'
+gem 'heroku'
 
 group :assets do
   gem 'sass-rails',   "~> 3.2.3"
