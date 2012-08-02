@@ -1,0 +1,796 @@
+/Users/daimler456/.rvm/rubies/ruby-1.9.3-p194/bin/ruby extconf.rb 
+Compiling V8
+mkdir -p build
+cp -r scons build
+mkdir -p build/scons/install
+python build/scons/setup.py install --prefix=install
+running install
+running build
+running build_py
+creating build
+creating build/lib
+creating build/lib/SCons
+copying engine/SCons/__init__.py -> build/lib/SCons
+copying engine/SCons/Action.py -> build/lib/SCons
+copying engine/SCons/Builder.py -> build/lib/SCons
+copying engine/SCons/CacheDir.py -> build/lib/SCons
+copying engine/SCons/Conftest.py -> build/lib/SCons
+copying engine/SCons/cpp.py -> build/lib/SCons
+copying engine/SCons/dblite.py -> build/lib/SCons
+copying engine/SCons/Debug.py -> build/lib/SCons
+copying engine/SCons/Defaults.py -> build/lib/SCons
+copying engine/SCons/Environment.py -> build/lib/SCons
+copying engine/SCons/Errors.py -> build/lib/SCons
+copying engine/SCons/Executor.py -> build/lib/SCons
+copying engine/SCons/exitfuncs.py -> build/lib/SCons
+copying engine/SCons/Job.py -> build/lib/SCons
+copying engine/SCons/Memoize.py -> build/lib/SCons
+copying engine/SCons/PathList.py -> build/lib/SCons
+copying engine/SCons/SConf.py -> build/lib/SCons
+copying engine/SCons/SConsign.py -> build/lib/SCons
+copying engine/SCons/Sig.py -> build/lib/SCons
+copying engine/SCons/Subst.py -> build/lib/SCons
+copying engine/SCons/Taskmaster.py -> build/lib/SCons
+copying engine/SCons/Util.py -> build/lib/SCons
+copying engine/SCons/Warnings.py -> build/lib/SCons
+creating build/lib/SCons/compat
+copying engine/SCons/compat/__init__.py -> build/lib/SCons/compat
+copying engine/SCons/compat/_scons_hashlib.py -> build/lib/SCons/compat
+copying engine/SCons/compat/_scons_itertools.py -> build/lib/SCons/compat
+copying engine/SCons/compat/_scons_optparse.py -> build/lib/SCons/compat
+copying engine/SCons/compat/_scons_sets.py -> build/lib/SCons/compat
+copying engine/SCons/compat/_scons_sets15.py -> build/lib/SCons/compat
+copying engine/SCons/compat/_scons_shlex.py -> build/lib/SCons/compat
+copying engine/SCons/compat/_scons_subprocess.py -> build/lib/SCons/compat
+copying engine/SCons/compat/_scons_textwrap.py -> build/lib/SCons/compat
+copying engine/SCons/compat/_scons_UserString.py -> build/lib/SCons/compat
+copying engine/SCons/compat/builtins.py -> build/lib/SCons/compat
+creating build/lib/SCons/Node
+copying engine/SCons/Node/__init__.py -> build/lib/SCons/Node
+copying engine/SCons/Node/Alias.py -> build/lib/SCons/Node
+copying engine/SCons/Node/FS.py -> build/lib/SCons/Node
+copying engine/SCons/Node/Python.py -> build/lib/SCons/Node
+creating build/lib/SCons/Options
+copying engine/SCons/Options/__init__.py -> build/lib/SCons/Options
+copying engine/SCons/Options/BoolOption.py -> build/lib/SCons/Options
+copying engine/SCons/Options/EnumOption.py -> build/lib/SCons/Options
+copying engine/SCons/Options/ListOption.py -> build/lib/SCons/Options
+copying engine/SCons/Options/PackageOption.py -> build/lib/SCons/Options
+copying engine/SCons/Options/PathOption.py -> build/lib/SCons/Options
+creating build/lib/SCons/Platform
+copying engine/SCons/Platform/__init__.py -> build/lib/SCons/Platform
+copying engine/SCons/Platform/aix.py -> build/lib/SCons/Platform
+copying engine/SCons/Platform/cygwin.py -> build/lib/SCons/Platform
+copying engine/SCons/Platform/darwin.py -> build/lib/SCons/Platform
+copying engine/SCons/Platform/hpux.py -> build/lib/SCons/Platform
+copying engine/SCons/Platform/irix.py -> build/lib/SCons/Platform
+copying engine/SCons/Platform/os2.py -> build/lib/SCons/Platform
+copying engine/SCons/Platform/posix.py -> build/lib/SCons/Platform
+copying engine/SCons/Platform/sunos.py -> build/lib/SCons/Platform
+copying engine/SCons/Platform/win32.py -> build/lib/SCons/Platform
+creating build/lib/SCons/Scanner
+copying engine/SCons/Scanner/__init__.py -> build/lib/SCons/Scanner
+copying engine/SCons/Scanner/C.py -> build/lib/SCons/Scanner
+copying engine/SCons/Scanner/D.py -> build/lib/SCons/Scanner
+copying engine/SCons/Scanner/Dir.py -> build/lib/SCons/Scanner
+copying engine/SCons/Scanner/Fortran.py -> build/lib/SCons/Scanner
+copying engine/SCons/Scanner/IDL.py -> build/lib/SCons/Scanner
+copying engine/SCons/Scanner/LaTeX.py -> build/lib/SCons/Scanner
+copying engine/SCons/Scanner/Prog.py -> build/lib/SCons/Scanner
+copying engine/SCons/Scanner/RC.py -> build/lib/SCons/Scanner
+creating build/lib/SCons/Script
+copying engine/SCons/Script/__init__.py -> build/lib/SCons/Script
+copying engine/SCons/Script/Interactive.py -> build/lib/SCons/Script
+copying engine/SCons/Script/Main.py -> build/lib/SCons/Script
+copying engine/SCons/Script/SConscript.py -> build/lib/SCons/Script
+copying engine/SCons/Script/SConsOptions.py -> build/lib/SCons/Script
+creating build/lib/SCons/Tool
+copying engine/SCons/Tool/386asm.py -> build/lib/SCons/Tool
+copying engine/SCons/Tool/__init__.py -> build/lib/SCons/Tool
+copying engine/SCons/Tool/aixc++.py -> build/lib/SCons/Tool
+copying engine/SCons/Tool/aixcc.py -> build/lib/SCons/Tool
+copying engine/SCons/Tool/aixf77.py -> build/lib/SCons/Tool
+copying engine/SCons/Tool/aixlink.py -> build/lib/SCons/Tool
+copying engine/SCons/Tool/applelink.py -> build/lib/SCons/Tool
+copying engine/SCons/Tool/ar.py -> build/lib/SCons/Tool
+copying engine/SCons/Tool/as.py -> build/lib/SCons/Tool
+copying engine/SCons/Tool/bcc32.py -> build/lib/SCons/Tool
+copying engine/SCons/Tool/BitKeeper.py -> build/lib/SCons/Tool
+copying engine/SCons/Tool/c++.py -> build/lib/SCons/Tool
+copying engine/SCons/Tool/cc.py -> build/lib/SCons/Tool
+copying engine/SCons/Tool/cvf.py -> build/lib/SCons/Tool
+copying engine/SCons/Tool/CVS.py -> build/lib/SCons/Tool
+copying engine/SCons/Tool/default.py -> build/lib/SCons/Tool
+copying engine/SCons/Tool/dmd.py -> build/lib/SCons/Tool
+copying engine/SCons/Tool/dvi.py -> build/lib/SCons/Tool
+copying engine/SCons/Tool/dvipdf.py -> build/lib/SCons/Tool
+copying engine/SCons/Tool/dvips.py -> build/lib/SCons/Tool
+copying engine/SCons/Tool/f77.py -> build/lib/SCons/Tool
+copying engine/SCons/Tool/f90.py -> build/lib/SCons/Tool
+copying engine/SCons/Tool/f95.py -> build/lib/SCons/Tool
+copying engine/SCons/Tool/filesystem.py -> build/lib/SCons/Tool
+copying engine/SCons/Tool/fortran.py -> build/lib/SCons/Tool
+copying engine/SCons/Tool/FortranCommon.py -> build/lib/SCons/Tool
+copying engine/SCons/Tool/g++.py -> build/lib/SCons/Tool
+copying engine/SCons/Tool/g77.py -> build/lib/SCons/Tool
+copying engine/SCons/Tool/gas.py -> build/lib/SCons/Tool
+copying engine/SCons/Tool/gcc.py -> build/lib/SCons/Tool
+copying engine/SCons/Tool/gfortran.py -> build/lib/SCons/Tool
+copying engine/SCons/Tool/gnulink.py -> build/lib/SCons/Tool
+copying engine/SCons/Tool/gs.py -> build/lib/SCons/Tool
+copying engine/SCons/Tool/hpc++.py -> build/lib/SCons/Tool
+copying engine/SCons/Tool/hpcc.py -> build/lib/SCons/Tool
+copying engine/SCons/Tool/hplink.py -> build/lib/SCons/Tool
+copying engine/SCons/Tool/icc.py -> build/lib/SCons/Tool
+copying engine/SCons/Tool/icl.py -> build/lib/SCons/Tool
+copying engine/SCons/Tool/ifl.py -> build/lib/SCons/Tool
+copying engine/SCons/Tool/ifort.py -> build/lib/SCons/Tool
+copying engine/SCons/Tool/ilink.py -> build/lib/SCons/Tool
+copying engine/SCons/Tool/ilink32.py -> build/lib/SCons/Tool
+copying engine/SCons/Tool/install.py -> build/lib/SCons/Tool
+copying engine/SCons/Tool/intelc.py -> build/lib/SCons/Tool
+copying engine/SCons/Tool/ipkg.py -> build/lib/SCons/Tool
+copying engine/SCons/Tool/jar.py -> build/lib/SCons/Tool
+copying engine/SCons/Tool/javac.py -> build/lib/SCons/Tool
+copying engine/SCons/Tool/JavaCommon.py -> build/lib/SCons/Tool
+copying engine/SCons/Tool/javah.py -> build/lib/SCons/Tool
+copying engine/SCons/Tool/latex.py -> build/lib/SCons/Tool
+copying engine/SCons/Tool/lex.py -> build/lib/SCons/Tool
+copying engine/SCons/Tool/link.py -> build/lib/SCons/Tool
+copying engine/SCons/Tool/linkloc.py -> build/lib/SCons/Tool
+copying engine/SCons/Tool/m4.py -> build/lib/SCons/Tool
+copying engine/SCons/Tool/masm.py -> build/lib/SCons/Tool
+copying engine/SCons/Tool/midl.py -> build/lib/SCons/Tool
+copying engine/SCons/Tool/mingw.py -> build/lib/SCons/Tool
+copying engine/SCons/Tool/mslib.py -> build/lib/SCons/Tool
+copying engine/SCons/Tool/mslink.py -> build/lib/SCons/Tool
+copying engine/SCons/Tool/mssdk.py -> build/lib/SCons/Tool
+copying engine/SCons/Tool/msvc.py -> build/lib/SCons/Tool
+copying engine/SCons/Tool/msvs.py -> build/lib/SCons/Tool
+copying engine/SCons/Tool/mwcc.py -> build/lib/SCons/Tool
+copying engine/SCons/Tool/mwld.py -> build/lib/SCons/Tool
+copying engine/SCons/Tool/nasm.py -> build/lib/SCons/Tool
+copying engine/SCons/Tool/pdf.py -> build/lib/SCons/Tool
+copying engine/SCons/Tool/pdflatex.py -> build/lib/SCons/Tool
+copying engine/SCons/Tool/pdftex.py -> build/lib/SCons/Tool
+copying engine/SCons/Tool/Perforce.py -> build/lib/SCons/Tool
+copying engine/SCons/Tool/PharLapCommon.py -> build/lib/SCons/Tool
+copying engine/SCons/Tool/qt.py -> build/lib/SCons/Tool
+copying engine/SCons/Tool/RCS.py -> build/lib/SCons/Tool
+copying engine/SCons/Tool/rmic.py -> build/lib/SCons/Tool
+copying engine/SCons/Tool/rpcgen.py -> build/lib/SCons/Tool
+copying engine/SCons/Tool/rpm.py -> build/lib/SCons/Tool
+copying engine/SCons/Tool/SCCS.py -> build/lib/SCons/Tool
+copying engine/SCons/Tool/sgiar.py -> build/lib/SCons/Tool
+copying engine/SCons/Tool/sgic++.py -> build/lib/SCons/Tool
+copying engine/SCons/Tool/sgicc.py -> build/lib/SCons/Tool
+copying engine/SCons/Tool/sgilink.py -> build/lib/SCons/Tool
+copying engine/SCons/Tool/Subversion.py -> build/lib/SCons/Tool
+copying engine/SCons/Tool/sunar.py -> build/lib/SCons/Tool
+copying engine/SCons/Tool/sunc++.py -> build/lib/SCons/Tool
+copying engine/SCons/Tool/suncc.py -> build/lib/SCons/Tool
+copying engine/SCons/Tool/sunf77.py -> build/lib/SCons/Tool
+copying engine/SCons/Tool/sunf90.py -> build/lib/SCons/Tool
+copying engine/SCons/Tool/sunf95.py -> build/lib/SCons/Tool
+copying engine/SCons/Tool/sunlink.py -> build/lib/SCons/Tool
+copying engine/SCons/Tool/swig.py -> build/lib/SCons/Tool
+copying engine/SCons/Tool/tar.py -> build/lib/SCons/Tool
+copying engine/SCons/Tool/tex.py -> build/lib/SCons/Tool
+copying engine/SCons/Tool/textfile.py -> build/lib/SCons/Tool
+copying engine/SCons/Tool/tlib.py -> build/lib/SCons/Tool
+copying engine/SCons/Tool/wix.py -> build/lib/SCons/Tool
+copying engine/SCons/Tool/yacc.py -> build/lib/SCons/Tool
+copying engine/SCons/Tool/zip.py -> build/lib/SCons/Tool
+creating build/lib/SCons/Tool/MSCommon
+copying engine/SCons/Tool/MSCommon/__init__.py -> build/lib/SCons/Tool/MSCommon
+copying engine/SCons/Tool/MSCommon/arch.py -> build/lib/SCons/Tool/MSCommon
+copying engine/SCons/Tool/MSCommon/common.py -> build/lib/SCons/Tool/MSCommon
+copying engine/SCons/Tool/MSCommon/netframework.py -> build/lib/SCons/Tool/MSCommon
+copying engine/SCons/Tool/MSCommon/sdk.py -> build/lib/SCons/Tool/MSCommon
+copying engine/SCons/Tool/MSCommon/vc.py -> build/lib/SCons/Tool/MSCommon
+copying engine/SCons/Tool/MSCommon/vs.py -> build/lib/SCons/Tool/MSCommon
+creating build/lib/SCons/Tool/packaging
+copying engine/SCons/Tool/packaging/__init__.py -> build/lib/SCons/Tool/packaging
+copying engine/SCons/Tool/packaging/ipk.py -> build/lib/SCons/Tool/packaging
+copying engine/SCons/Tool/packaging/msi.py -> build/lib/SCons/Tool/packaging
+copying engine/SCons/Tool/packaging/rpm.py -> build/lib/SCons/Tool/packaging
+copying engine/SCons/Tool/packaging/src_tarbz2.py -> build/lib/SCons/Tool/packaging
+copying engine/SCons/Tool/packaging/src_targz.py -> build/lib/SCons/Tool/packaging
+copying engine/SCons/Tool/packaging/src_zip.py -> build/lib/SCons/Tool/packaging
+copying engine/SCons/Tool/packaging/tarbz2.py -> build/lib/SCons/Tool/packaging
+copying engine/SCons/Tool/packaging/targz.py -> build/lib/SCons/Tool/packaging
+copying engine/SCons/Tool/packaging/zip.py -> build/lib/SCons/Tool/packaging
+creating build/lib/SCons/Variables
+copying engine/SCons/Variables/__init__.py -> build/lib/SCons/Variables
+copying engine/SCons/Variables/BoolVariable.py -> build/lib/SCons/Variables
+copying engine/SCons/Variables/EnumVariable.py -> build/lib/SCons/Variables
+copying engine/SCons/Variables/ListVariable.py -> build/lib/SCons/Variables
+copying engine/SCons/Variables/PackageVariable.py -> build/lib/SCons/Variables
+copying engine/SCons/Variables/PathVariable.py -> build/lib/SCons/Variables
+running build_scripts
+creating build/scripts
+copying and adjusting script/scons -> build/scripts
+copying and adjusting script/sconsign -> build/scripts
+copying and adjusting script/scons-time -> build/scripts
+copying script/scons.bat -> build/scripts
+changing mode of build/scripts/scons from 644 to 755
+changing mode of build/scripts/sconsign from 644 to 755
+changing mode of build/scripts/scons-time from 644 to 755
+changing mode of build/scripts/scons.bat from 644 to 755
+running install_lib
+creating install/lib
+creating install/lib/scons-1.2.0.d20100117
+creating install/lib/scons-1.2.0.d20100117/SCons
+copying build/lib/SCons/__init__.py -> install/lib/scons-1.2.0.d20100117/SCons
+copying build/lib/SCons/Action.py -> install/lib/scons-1.2.0.d20100117/SCons
+copying build/lib/SCons/Builder.py -> install/lib/scons-1.2.0.d20100117/SCons
+copying build/lib/SCons/CacheDir.py -> install/lib/scons-1.2.0.d20100117/SCons
+creating install/lib/scons-1.2.0.d20100117/SCons/compat
+copying build/lib/SCons/compat/__init__.py -> install/lib/scons-1.2.0.d20100117/SCons/compat
+copying build/lib/SCons/compat/_scons_hashlib.py -> install/lib/scons-1.2.0.d20100117/SCons/compat
+copying build/lib/SCons/compat/_scons_itertools.py -> install/lib/scons-1.2.0.d20100117/SCons/compat
+copying build/lib/SCons/compat/_scons_optparse.py -> install/lib/scons-1.2.0.d20100117/SCons/compat
+copying build/lib/SCons/compat/_scons_sets.py -> install/lib/scons-1.2.0.d20100117/SCons/compat
+copying build/lib/SCons/compat/_scons_sets15.py -> install/lib/scons-1.2.0.d20100117/SCons/compat
+copying build/lib/SCons/compat/_scons_shlex.py -> install/lib/scons-1.2.0.d20100117/SCons/compat
+copying build/lib/SCons/compat/_scons_subprocess.py -> install/lib/scons-1.2.0.d20100117/SCons/compat
+copying build/lib/SCons/compat/_scons_textwrap.py -> install/lib/scons-1.2.0.d20100117/SCons/compat
+copying build/lib/SCons/compat/_scons_UserString.py -> install/lib/scons-1.2.0.d20100117/SCons/compat
+copying build/lib/SCons/compat/builtins.py -> install/lib/scons-1.2.0.d20100117/SCons/compat
+copying build/lib/SCons/Conftest.py -> install/lib/scons-1.2.0.d20100117/SCons
+copying build/lib/SCons/cpp.py -> install/lib/scons-1.2.0.d20100117/SCons
+copying build/lib/SCons/dblite.py -> install/lib/scons-1.2.0.d20100117/SCons
+copying build/lib/SCons/Debug.py -> install/lib/scons-1.2.0.d20100117/SCons
+copying build/lib/SCons/Defaults.py -> install/lib/scons-1.2.0.d20100117/SCons
+copying build/lib/SCons/Environment.py -> install/lib/scons-1.2.0.d20100117/SCons
+copying build/lib/SCons/Errors.py -> install/lib/scons-1.2.0.d20100117/SCons
+copying build/lib/SCons/Executor.py -> install/lib/scons-1.2.0.d20100117/SCons
+copying build/lib/SCons/exitfuncs.py -> install/lib/scons-1.2.0.d20100117/SCons
+copying build/lib/SCons/Job.py -> install/lib/scons-1.2.0.d20100117/SCons
+copying build/lib/SCons/Memoize.py -> install/lib/scons-1.2.0.d20100117/SCons
+creating install/lib/scons-1.2.0.d20100117/SCons/Node
+copying build/lib/SCons/Node/__init__.py -> install/lib/scons-1.2.0.d20100117/SCons/Node
+copying build/lib/SCons/Node/Alias.py -> install/lib/scons-1.2.0.d20100117/SCons/Node
+copying build/lib/SCons/Node/FS.py -> install/lib/scons-1.2.0.d20100117/SCons/Node
+copying build/lib/SCons/Node/Python.py -> install/lib/scons-1.2.0.d20100117/SCons/Node
+creating install/lib/scons-1.2.0.d20100117/SCons/Options
+copying build/lib/SCons/Options/__init__.py -> install/lib/scons-1.2.0.d20100117/SCons/Options
+copying build/lib/SCons/Options/BoolOption.py -> install/lib/scons-1.2.0.d20100117/SCons/Options
+copying build/lib/SCons/Options/EnumOption.py -> install/lib/scons-1.2.0.d20100117/SCons/Options
+copying build/lib/SCons/Options/ListOption.py -> install/lib/scons-1.2.0.d20100117/SCons/Options
+copying build/lib/SCons/Options/PackageOption.py -> install/lib/scons-1.2.0.d20100117/SCons/Options
+copying build/lib/SCons/Options/PathOption.py -> install/lib/scons-1.2.0.d20100117/SCons/Options
+copying build/lib/SCons/PathList.py -> install/lib/scons-1.2.0.d20100117/SCons
+creating install/lib/scons-1.2.0.d20100117/SCons/Platform
+copying build/lib/SCons/Platform/__init__.py -> install/lib/scons-1.2.0.d20100117/SCons/Platform
+copying build/lib/SCons/Platform/aix.py -> install/lib/scons-1.2.0.d20100117/SCons/Platform
+copying build/lib/SCons/Platform/cygwin.py -> install/lib/scons-1.2.0.d20100117/SCons/Platform
+copying build/lib/SCons/Platform/darwin.py -> install/lib/scons-1.2.0.d20100117/SCons/Platform
+copying build/lib/SCons/Platform/hpux.py -> install/lib/scons-1.2.0.d20100117/SCons/Platform
+copying build/lib/SCons/Platform/irix.py -> install/lib/scons-1.2.0.d20100117/SCons/Platform
+copying build/lib/SCons/Platform/os2.py -> install/lib/scons-1.2.0.d20100117/SCons/Platform
+copying build/lib/SCons/Platform/posix.py -> install/lib/scons-1.2.0.d20100117/SCons/Platform
+copying build/lib/SCons/Platform/sunos.py -> install/lib/scons-1.2.0.d20100117/SCons/Platform
+copying build/lib/SCons/Platform/win32.py -> install/lib/scons-1.2.0.d20100117/SCons/Platform
+creating install/lib/scons-1.2.0.d20100117/SCons/Scanner
+copying build/lib/SCons/Scanner/__init__.py -> install/lib/scons-1.2.0.d20100117/SCons/Scanner
+copying build/lib/SCons/Scanner/C.py -> install/lib/scons-1.2.0.d20100117/SCons/Scanner
+copying build/lib/SCons/Scanner/D.py -> install/lib/scons-1.2.0.d20100117/SCons/Scanner
+copying build/lib/SCons/Scanner/Dir.py -> install/lib/scons-1.2.0.d20100117/SCons/Scanner
+copying build/lib/SCons/Scanner/Fortran.py -> install/lib/scons-1.2.0.d20100117/SCons/Scanner
+copying build/lib/SCons/Scanner/IDL.py -> install/lib/scons-1.2.0.d20100117/SCons/Scanner
+copying build/lib/SCons/Scanner/LaTeX.py -> install/lib/scons-1.2.0.d20100117/SCons/Scanner
+copying build/lib/SCons/Scanner/Prog.py -> install/lib/scons-1.2.0.d20100117/SCons/Scanner
+copying build/lib/SCons/Scanner/RC.py -> install/lib/scons-1.2.0.d20100117/SCons/Scanner
+copying build/lib/SCons/SConf.py -> install/lib/scons-1.2.0.d20100117/SCons
+copying build/lib/SCons/SConsign.py -> install/lib/scons-1.2.0.d20100117/SCons
+creating install/lib/scons-1.2.0.d20100117/SCons/Script
+copying build/lib/SCons/Script/__init__.py -> install/lib/scons-1.2.0.d20100117/SCons/Script
+copying build/lib/SCons/Script/Interactive.py -> install/lib/scons-1.2.0.d20100117/SCons/Script
+copying build/lib/SCons/Script/Main.py -> install/lib/scons-1.2.0.d20100117/SCons/Script
+copying build/lib/SCons/Script/SConscript.py -> install/lib/scons-1.2.0.d20100117/SCons/Script
+copying build/lib/SCons/Script/SConsOptions.py -> install/lib/scons-1.2.0.d20100117/SCons/Script
+copying build/lib/SCons/Sig.py -> install/lib/scons-1.2.0.d20100117/SCons
+copying build/lib/SCons/Subst.py -> install/lib/scons-1.2.0.d20100117/SCons
+copying build/lib/SCons/Taskmaster.py -> install/lib/scons-1.2.0.d20100117/SCons
+creating install/lib/scons-1.2.0.d20100117/SCons/Tool
+copying build/lib/SCons/Tool/386asm.py -> install/lib/scons-1.2.0.d20100117/SCons/Tool
+copying build/lib/SCons/Tool/__init__.py -> install/lib/scons-1.2.0.d20100117/SCons/Tool
+copying build/lib/SCons/Tool/aixc++.py -> install/lib/scons-1.2.0.d20100117/SCons/Tool
+copying build/lib/SCons/Tool/aixcc.py -> install/lib/scons-1.2.0.d20100117/SCons/Tool
+copying build/lib/SCons/Tool/aixf77.py -> install/lib/scons-1.2.0.d20100117/SCons/Tool
+copying build/lib/SCons/Tool/aixlink.py -> install/lib/scons-1.2.0.d20100117/SCons/Tool
+copying build/lib/SCons/Tool/applelink.py -> install/lib/scons-1.2.0.d20100117/SCons/Tool
+copying build/lib/SCons/Tool/ar.py -> install/lib/scons-1.2.0.d20100117/SCons/Tool
+copying build/lib/SCons/Tool/as.py -> install/lib/scons-1.2.0.d20100117/SCons/Tool
+copying build/lib/SCons/Tool/bcc32.py -> install/lib/scons-1.2.0.d20100117/SCons/Tool
+copying build/lib/SCons/Tool/BitKeeper.py -> install/lib/scons-1.2.0.d20100117/SCons/Tool
+copying build/lib/SCons/Tool/c++.py -> install/lib/scons-1.2.0.d20100117/SCons/Tool
+copying build/lib/SCons/Tool/cc.py -> install/lib/scons-1.2.0.d20100117/SCons/Tool
+copying build/lib/SCons/Tool/cvf.py -> install/lib/scons-1.2.0.d20100117/SCons/Tool
+copying build/lib/SCons/Tool/CVS.py -> install/lib/scons-1.2.0.d20100117/SCons/Tool
+copying build/lib/SCons/Tool/default.py -> install/lib/scons-1.2.0.d20100117/SCons/Tool
+copying build/lib/SCons/Tool/dmd.py -> install/lib/scons-1.2.0.d20100117/SCons/Tool
+copying build/lib/SCons/Tool/dvi.py -> install/lib/scons-1.2.0.d20100117/SCons/Tool
+copying build/lib/SCons/Tool/dvipdf.py -> install/lib/scons-1.2.0.d20100117/SCons/Tool
+copying build/lib/SCons/Tool/dvips.py -> install/lib/scons-1.2.0.d20100117/SCons/Tool
+copying build/lib/SCons/Tool/f77.py -> install/lib/scons-1.2.0.d20100117/SCons/Tool
+copying build/lib/SCons/Tool/f90.py -> install/lib/scons-1.2.0.d20100117/SCons/Tool
+copying build/lib/SCons/Tool/f95.py -> install/lib/scons-1.2.0.d20100117/SCons/Tool
+copying build/lib/SCons/Tool/filesystem.py -> install/lib/scons-1.2.0.d20100117/SCons/Tool
+copying build/lib/SCons/Tool/fortran.py -> install/lib/scons-1.2.0.d20100117/SCons/Tool
+copying build/lib/SCons/Tool/FortranCommon.py -> install/lib/scons-1.2.0.d20100117/SCons/Tool
+copying build/lib/SCons/Tool/g++.py -> install/lib/scons-1.2.0.d20100117/SCons/Tool
+copying build/lib/SCons/Tool/g77.py -> install/lib/scons-1.2.0.d20100117/SCons/Tool
+copying build/lib/SCons/Tool/gas.py -> install/lib/scons-1.2.0.d20100117/SCons/Tool
+copying build/lib/SCons/Tool/gcc.py -> install/lib/scons-1.2.0.d20100117/SCons/Tool
+copying build/lib/SCons/Tool/gfortran.py -> install/lib/scons-1.2.0.d20100117/SCons/Tool
+copying build/lib/SCons/Tool/gnulink.py -> install/lib/scons-1.2.0.d20100117/SCons/Tool
+copying build/lib/SCons/Tool/gs.py -> install/lib/scons-1.2.0.d20100117/SCons/Tool
+copying build/lib/SCons/Tool/hpc++.py -> install/lib/scons-1.2.0.d20100117/SCons/Tool
+copying build/lib/SCons/Tool/hpcc.py -> install/lib/scons-1.2.0.d20100117/SCons/Tool
+copying build/lib/SCons/Tool/hplink.py -> install/lib/scons-1.2.0.d20100117/SCons/Tool
+copying build/lib/SCons/Tool/icc.py -> install/lib/scons-1.2.0.d20100117/SCons/Tool
+copying build/lib/SCons/Tool/icl.py -> install/lib/scons-1.2.0.d20100117/SCons/Tool
+copying build/lib/SCons/Tool/ifl.py -> install/lib/scons-1.2.0.d20100117/SCons/Tool
+copying build/lib/SCons/Tool/ifort.py -> install/lib/scons-1.2.0.d20100117/SCons/Tool
+copying build/lib/SCons/Tool/ilink.py -> install/lib/scons-1.2.0.d20100117/SCons/Tool
+copying build/lib/SCons/Tool/ilink32.py -> install/lib/scons-1.2.0.d20100117/SCons/Tool
+copying build/lib/SCons/Tool/install.py -> install/lib/scons-1.2.0.d20100117/SCons/Tool
+copying build/lib/SCons/Tool/intelc.py -> install/lib/scons-1.2.0.d20100117/SCons/Tool
+copying build/lib/SCons/Tool/ipkg.py -> install/lib/scons-1.2.0.d20100117/SCons/Tool
+copying build/lib/SCons/Tool/jar.py -> install/lib/scons-1.2.0.d20100117/SCons/Tool
+copying build/lib/SCons/Tool/javac.py -> install/lib/scons-1.2.0.d20100117/SCons/Tool
+copying build/lib/SCons/Tool/JavaCommon.py -> install/lib/scons-1.2.0.d20100117/SCons/Tool
+copying build/lib/SCons/Tool/javah.py -> install/lib/scons-1.2.0.d20100117/SCons/Tool
+copying build/lib/SCons/Tool/latex.py -> install/lib/scons-1.2.0.d20100117/SCons/Tool
+copying build/lib/SCons/Tool/lex.py -> install/lib/scons-1.2.0.d20100117/SCons/Tool
+copying build/lib/SCons/Tool/link.py -> install/lib/scons-1.2.0.d20100117/SCons/Tool
+copying build/lib/SCons/Tool/linkloc.py -> install/lib/scons-1.2.0.d20100117/SCons/Tool
+copying build/lib/SCons/Tool/m4.py -> install/lib/scons-1.2.0.d20100117/SCons/Tool
+copying build/lib/SCons/Tool/masm.py -> install/lib/scons-1.2.0.d20100117/SCons/Tool
+copying build/lib/SCons/Tool/midl.py -> install/lib/scons-1.2.0.d20100117/SCons/Tool
+copying build/lib/SCons/Tool/mingw.py -> install/lib/scons-1.2.0.d20100117/SCons/Tool
+creating install/lib/scons-1.2.0.d20100117/SCons/Tool/MSCommon
+copying build/lib/SCons/Tool/MSCommon/__init__.py -> install/lib/scons-1.2.0.d20100117/SCons/Tool/MSCommon
+copying build/lib/SCons/Tool/MSCommon/arch.py -> install/lib/scons-1.2.0.d20100117/SCons/Tool/MSCommon
+copying build/lib/SCons/Tool/MSCommon/common.py -> install/lib/scons-1.2.0.d20100117/SCons/Tool/MSCommon
+copying build/lib/SCons/Tool/MSCommon/netframework.py -> install/lib/scons-1.2.0.d20100117/SCons/Tool/MSCommon
+copying build/lib/SCons/Tool/MSCommon/sdk.py -> install/lib/scons-1.2.0.d20100117/SCons/Tool/MSCommon
+copying build/lib/SCons/Tool/MSCommon/vc.py -> install/lib/scons-1.2.0.d20100117/SCons/Tool/MSCommon
+copying build/lib/SCons/Tool/MSCommon/vs.py -> install/lib/scons-1.2.0.d20100117/SCons/Tool/MSCommon
+copying build/lib/SCons/Tool/mslib.py -> install/lib/scons-1.2.0.d20100117/SCons/Tool
+copying build/lib/SCons/Tool/mslink.py -> install/lib/scons-1.2.0.d20100117/SCons/Tool
+copying build/lib/SCons/Tool/mssdk.py -> install/lib/scons-1.2.0.d20100117/SCons/Tool
+copying build/lib/SCons/Tool/msvc.py -> install/lib/scons-1.2.0.d20100117/SCons/Tool
+copying build/lib/SCons/Tool/msvs.py -> install/lib/scons-1.2.0.d20100117/SCons/Tool
+copying build/lib/SCons/Tool/mwcc.py -> install/lib/scons-1.2.0.d20100117/SCons/Tool
+copying build/lib/SCons/Tool/mwld.py -> install/lib/scons-1.2.0.d20100117/SCons/Tool
+copying build/lib/SCons/Tool/nasm.py -> install/lib/scons-1.2.0.d20100117/SCons/Tool
+creating install/lib/scons-1.2.0.d20100117/SCons/Tool/packaging
+copying build/lib/SCons/Tool/packaging/__init__.py -> install/lib/scons-1.2.0.d20100117/SCons/Tool/packaging
+copying build/lib/SCons/Tool/packaging/ipk.py -> install/lib/scons-1.2.0.d20100117/SCons/Tool/packaging
+copying build/lib/SCons/Tool/packaging/msi.py -> install/lib/scons-1.2.0.d20100117/SCons/Tool/packaging
+copying build/lib/SCons/Tool/packaging/rpm.py -> install/lib/scons-1.2.0.d20100117/SCons/Tool/packaging
+copying build/lib/SCons/Tool/packaging/src_tarbz2.py -> install/lib/scons-1.2.0.d20100117/SCons/Tool/packaging
+copying build/lib/SCons/Tool/packaging/src_targz.py -> install/lib/scons-1.2.0.d20100117/SCons/Tool/packaging
+copying build/lib/SCons/Tool/packaging/src_zip.py -> install/lib/scons-1.2.0.d20100117/SCons/Tool/packaging
+copying build/lib/SCons/Tool/packaging/tarbz2.py -> install/lib/scons-1.2.0.d20100117/SCons/Tool/packaging
+copying build/lib/SCons/Tool/packaging/targz.py -> install/lib/scons-1.2.0.d20100117/SCons/Tool/packaging
+copying build/lib/SCons/Tool/packaging/zip.py -> install/lib/scons-1.2.0.d20100117/SCons/Tool/packaging
+copying build/lib/SCons/Tool/pdf.py -> install/lib/scons-1.2.0.d20100117/SCons/Tool
+copying build/lib/SCons/Tool/pdflatex.py -> install/lib/scons-1.2.0.d20100117/SCons/Tool
+copying build/lib/SCons/Tool/pdftex.py -> install/lib/scons-1.2.0.d20100117/SCons/Tool
+copying build/lib/SCons/Tool/Perforce.py -> install/lib/scons-1.2.0.d20100117/SCons/Tool
+copying build/lib/SCons/Tool/PharLapCommon.py -> install/lib/scons-1.2.0.d20100117/SCons/Tool
+copying build/lib/SCons/Tool/qt.py -> install/lib/scons-1.2.0.d20100117/SCons/Tool
+copying build/lib/SCons/Tool/RCS.py -> install/lib/scons-1.2.0.d20100117/SCons/Tool
+copying build/lib/SCons/Tool/rmic.py -> install/lib/scons-1.2.0.d20100117/SCons/Tool
+copying build/lib/SCons/Tool/rpcgen.py -> install/lib/scons-1.2.0.d20100117/SCons/Tool
+copying build/lib/SCons/Tool/rpm.py -> install/lib/scons-1.2.0.d20100117/SCons/Tool
+copying build/lib/SCons/Tool/SCCS.py -> install/lib/scons-1.2.0.d20100117/SCons/Tool
+copying build/lib/SCons/Tool/sgiar.py -> install/lib/scons-1.2.0.d20100117/SCons/Tool
+copying build/lib/SCons/Tool/sgic++.py -> install/lib/scons-1.2.0.d20100117/SCons/Tool
+copying build/lib/SCons/Tool/sgicc.py -> install/lib/scons-1.2.0.d20100117/SCons/Tool
+copying build/lib/SCons/Tool/sgilink.py -> install/lib/scons-1.2.0.d20100117/SCons/Tool
+copying build/lib/SCons/Tool/Subversion.py -> install/lib/scons-1.2.0.d20100117/SCons/Tool
+copying build/lib/SCons/Tool/sunar.py -> install/lib/scons-1.2.0.d20100117/SCons/Tool
+copying build/lib/SCons/Tool/sunc++.py -> install/lib/scons-1.2.0.d20100117/SCons/Tool
+copying build/lib/SCons/Tool/suncc.py -> install/lib/scons-1.2.0.d20100117/SCons/Tool
+copying build/lib/SCons/Tool/sunf77.py -> install/lib/scons-1.2.0.d20100117/SCons/Tool
+copying build/lib/SCons/Tool/sunf90.py -> install/lib/scons-1.2.0.d20100117/SCons/Tool
+copying build/lib/SCons/Tool/sunf95.py -> install/lib/scons-1.2.0.d20100117/SCons/Tool
+copying build/lib/SCons/Tool/sunlink.py -> install/lib/scons-1.2.0.d20100117/SCons/Tool
+copying build/lib/SCons/Tool/swig.py -> install/lib/scons-1.2.0.d20100117/SCons/Tool
+copying build/lib/SCons/Tool/tar.py -> install/lib/scons-1.2.0.d20100117/SCons/Tool
+copying build/lib/SCons/Tool/tex.py -> install/lib/scons-1.2.0.d20100117/SCons/Tool
+copying build/lib/SCons/Tool/textfile.py -> install/lib/scons-1.2.0.d20100117/SCons/Tool
+copying build/lib/SCons/Tool/tlib.py -> install/lib/scons-1.2.0.d20100117/SCons/Tool
+copying build/lib/SCons/Tool/wix.py -> install/lib/scons-1.2.0.d20100117/SCons/Tool
+copying build/lib/SCons/Tool/yacc.py -> install/lib/scons-1.2.0.d20100117/SCons/Tool
+copying build/lib/SCons/Tool/zip.py -> install/lib/scons-1.2.0.d20100117/SCons/Tool
+copying build/lib/SCons/Util.py -> install/lib/scons-1.2.0.d20100117/SCons
+creating install/lib/scons-1.2.0.d20100117/SCons/Variables
+copying build/lib/SCons/Variables/__init__.py -> install/lib/scons-1.2.0.d20100117/SCons/Variables
+copying build/lib/SCons/Variables/BoolVariable.py -> install/lib/scons-1.2.0.d20100117/SCons/Variables
+copying build/lib/SCons/Variables/EnumVariable.py -> install/lib/scons-1.2.0.d20100117/SCons/Variables
+copying build/lib/SCons/Variables/ListVariable.py -> install/lib/scons-1.2.0.d20100117/SCons/Variables
+copying build/lib/SCons/Variables/PackageVariable.py -> install/lib/scons-1.2.0.d20100117/SCons/Variables
+copying build/lib/SCons/Variables/PathVariable.py -> install/lib/scons-1.2.0.d20100117/SCons/Variables
+copying build/lib/SCons/Warnings.py -> install/lib/scons-1.2.0.d20100117/SCons
+byte-compiling install/lib/scons-1.2.0.d20100117/SCons/__init__.py to __init__.pyc
+byte-compiling install/lib/scons-1.2.0.d20100117/SCons/Action.py to Action.pyc
+byte-compiling install/lib/scons-1.2.0.d20100117/SCons/Builder.py to Builder.pyc
+byte-compiling install/lib/scons-1.2.0.d20100117/SCons/CacheDir.py to CacheDir.pyc
+byte-compiling install/lib/scons-1.2.0.d20100117/SCons/compat/__init__.py to __init__.pyc
+byte-compiling install/lib/scons-1.2.0.d20100117/SCons/compat/_scons_hashlib.py to _scons_hashlib.pyc
+byte-compiling install/lib/scons-1.2.0.d20100117/SCons/compat/_scons_itertools.py to _scons_itertools.pyc
+byte-compiling install/lib/scons-1.2.0.d20100117/SCons/compat/_scons_optparse.py to _scons_optparse.pyc
+byte-compiling install/lib/scons-1.2.0.d20100117/SCons/compat/_scons_sets.py to _scons_sets.pyc
+byte-compiling install/lib/scons-1.2.0.d20100117/SCons/compat/_scons_sets15.py to _scons_sets15.pyc
+byte-compiling install/lib/scons-1.2.0.d20100117/SCons/compat/_scons_shlex.py to _scons_shlex.pyc
+byte-compiling install/lib/scons-1.2.0.d20100117/SCons/compat/_scons_subprocess.py to _scons_subprocess.pyc
+byte-compiling install/lib/scons-1.2.0.d20100117/SCons/compat/_scons_textwrap.py to _scons_textwrap.pyc
+byte-compiling install/lib/scons-1.2.0.d20100117/SCons/compat/_scons_UserString.py to _scons_UserString.pyc
+byte-compiling install/lib/scons-1.2.0.d20100117/SCons/compat/builtins.py to builtins.pyc
+byte-compiling install/lib/scons-1.2.0.d20100117/SCons/Conftest.py to Conftest.pyc
+byte-compiling install/lib/scons-1.2.0.d20100117/SCons/cpp.py to cpp.pyc
+byte-compiling install/lib/scons-1.2.0.d20100117/SCons/dblite.py to dblite.pyc
+byte-compiling install/lib/scons-1.2.0.d20100117/SCons/Debug.py to Debug.pyc
+byte-compiling install/lib/scons-1.2.0.d20100117/SCons/Defaults.py to Defaults.pyc
+byte-compiling install/lib/scons-1.2.0.d20100117/SCons/Environment.py to Environment.pyc
+byte-compiling install/lib/scons-1.2.0.d20100117/SCons/Errors.py to Errors.pyc
+byte-compiling install/lib/scons-1.2.0.d20100117/SCons/Executor.py to Executor.pyc
+byte-compiling install/lib/scons-1.2.0.d20100117/SCons/exitfuncs.py to exitfuncs.pyc
+byte-compiling install/lib/scons-1.2.0.d20100117/SCons/Job.py to Job.pyc
+byte-compiling install/lib/scons-1.2.0.d20100117/SCons/Memoize.py to Memoize.pyc
+byte-compiling install/lib/scons-1.2.0.d20100117/SCons/Node/__init__.py to __init__.pyc
+byte-compiling install/lib/scons-1.2.0.d20100117/SCons/Node/Alias.py to Alias.pyc
+byte-compiling install/lib/scons-1.2.0.d20100117/SCons/Node/FS.py to FS.pyc
+byte-compiling install/lib/scons-1.2.0.d20100117/SCons/Node/Python.py to Python.pyc
+byte-compiling install/lib/scons-1.2.0.d20100117/SCons/Options/__init__.py to __init__.pyc
+byte-compiling install/lib/scons-1.2.0.d20100117/SCons/Options/BoolOption.py to BoolOption.pyc
+byte-compiling install/lib/scons-1.2.0.d20100117/SCons/Options/EnumOption.py to EnumOption.pyc
+byte-compiling install/lib/scons-1.2.0.d20100117/SCons/Options/ListOption.py to ListOption.pyc
+byte-compiling install/lib/scons-1.2.0.d20100117/SCons/Options/PackageOption.py to PackageOption.pyc
+byte-compiling install/lib/scons-1.2.0.d20100117/SCons/Options/PathOption.py to PathOption.pyc
+byte-compiling install/lib/scons-1.2.0.d20100117/SCons/PathList.py to PathList.pyc
+byte-compiling install/lib/scons-1.2.0.d20100117/SCons/Platform/__init__.py to __init__.pyc
+byte-compiling install/lib/scons-1.2.0.d20100117/SCons/Platform/aix.py to aix.pyc
+byte-compiling install/lib/scons-1.2.0.d20100117/SCons/Platform/cygwin.py to cygwin.pyc
+byte-compiling install/lib/scons-1.2.0.d20100117/SCons/Platform/darwin.py to darwin.pyc
+byte-compiling install/lib/scons-1.2.0.d20100117/SCons/Platform/hpux.py to hpux.pyc
+byte-compiling install/lib/scons-1.2.0.d20100117/SCons/Platform/irix.py to irix.pyc
+byte-compiling install/lib/scons-1.2.0.d20100117/SCons/Platform/os2.py to os2.pyc
+byte-compiling install/lib/scons-1.2.0.d20100117/SCons/Platform/posix.py to posix.pyc
+byte-compiling install/lib/scons-1.2.0.d20100117/SCons/Platform/sunos.py to sunos.pyc
+byte-compiling install/lib/scons-1.2.0.d20100117/SCons/Platform/win32.py to win32.pyc
+byte-compiling install/lib/scons-1.2.0.d20100117/SCons/Scanner/__init__.py to __init__.pyc
+byte-compiling install/lib/scons-1.2.0.d20100117/SCons/Scanner/C.py to C.pyc
+byte-compiling install/lib/scons-1.2.0.d20100117/SCons/Scanner/D.py to D.pyc
+byte-compiling install/lib/scons-1.2.0.d20100117/SCons/Scanner/Dir.py to Dir.pyc
+byte-compiling install/lib/scons-1.2.0.d20100117/SCons/Scanner/Fortran.py to Fortran.pyc
+byte-compiling install/lib/scons-1.2.0.d20100117/SCons/Scanner/IDL.py to IDL.pyc
+byte-compiling install/lib/scons-1.2.0.d20100117/SCons/Scanner/LaTeX.py to LaTeX.pyc
+byte-compiling install/lib/scons-1.2.0.d20100117/SCons/Scanner/Prog.py to Prog.pyc
+byte-compiling install/lib/scons-1.2.0.d20100117/SCons/Scanner/RC.py to RC.pyc
+byte-compiling install/lib/scons-1.2.0.d20100117/SCons/SConf.py to SConf.pyc
+byte-compiling install/lib/scons-1.2.0.d20100117/SCons/SConsign.py to SConsign.pyc
+byte-compiling install/lib/scons-1.2.0.d20100117/SCons/Script/__init__.py to __init__.pyc
+byte-compiling install/lib/scons-1.2.0.d20100117/SCons/Script/Interactive.py to Interactive.pyc
+byte-compiling install/lib/scons-1.2.0.d20100117/SCons/Script/Main.py to Main.pyc
+byte-compiling install/lib/scons-1.2.0.d20100117/SCons/Script/SConscript.py to SConscript.pyc
+byte-compiling install/lib/scons-1.2.0.d20100117/SCons/Script/SConsOptions.py to SConsOptions.pyc
+byte-compiling install/lib/scons-1.2.0.d20100117/SCons/Sig.py to Sig.pyc
+byte-compiling install/lib/scons-1.2.0.d20100117/SCons/Subst.py to Subst.pyc
+byte-compiling install/lib/scons-1.2.0.d20100117/SCons/Taskmaster.py to Taskmaster.pyc
+byte-compiling install/lib/scons-1.2.0.d20100117/SCons/Tool/386asm.py to 386asm.pyc
+byte-compiling install/lib/scons-1.2.0.d20100117/SCons/Tool/__init__.py to __init__.pyc
+byte-compiling install/lib/scons-1.2.0.d20100117/SCons/Tool/aixc++.py to aixc++.pyc
+byte-compiling install/lib/scons-1.2.0.d20100117/SCons/Tool/aixcc.py to aixcc.pyc
+byte-compiling install/lib/scons-1.2.0.d20100117/SCons/Tool/aixf77.py to aixf77.pyc
+byte-compiling install/lib/scons-1.2.0.d20100117/SCons/Tool/aixlink.py to aixlink.pyc
+byte-compiling install/lib/scons-1.2.0.d20100117/SCons/Tool/applelink.py to applelink.pyc
+byte-compiling install/lib/scons-1.2.0.d20100117/SCons/Tool/ar.py to ar.pyc
+byte-compiling install/lib/scons-1.2.0.d20100117/SCons/Tool/as.py to as.pyc
+byte-compiling install/lib/scons-1.2.0.d20100117/SCons/Tool/bcc32.py to bcc32.pyc
+byte-compiling install/lib/scons-1.2.0.d20100117/SCons/Tool/BitKeeper.py to BitKeeper.pyc
+byte-compiling install/lib/scons-1.2.0.d20100117/SCons/Tool/c++.py to c++.pyc
+byte-compiling install/lib/scons-1.2.0.d20100117/SCons/Tool/cc.py to cc.pyc
+byte-compiling install/lib/scons-1.2.0.d20100117/SCons/Tool/cvf.py to cvf.pyc
+byte-compiling install/lib/scons-1.2.0.d20100117/SCons/Tool/CVS.py to CVS.pyc
+byte-compiling install/lib/scons-1.2.0.d20100117/SCons/Tool/default.py to default.pyc
+byte-compiling install/lib/scons-1.2.0.d20100117/SCons/Tool/dmd.py to dmd.pyc
+byte-compiling install/lib/scons-1.2.0.d20100117/SCons/Tool/dvi.py to dvi.pyc
+byte-compiling install/lib/scons-1.2.0.d20100117/SCons/Tool/dvipdf.py to dvipdf.pyc
+byte-compiling install/lib/scons-1.2.0.d20100117/SCons/Tool/dvips.py to dvips.pyc
+byte-compiling install/lib/scons-1.2.0.d20100117/SCons/Tool/f77.py to f77.pyc
+byte-compiling install/lib/scons-1.2.0.d20100117/SCons/Tool/f90.py to f90.pyc
+byte-compiling install/lib/scons-1.2.0.d20100117/SCons/Tool/f95.py to f95.pyc
+byte-compiling install/lib/scons-1.2.0.d20100117/SCons/Tool/filesystem.py to filesystem.pyc
+byte-compiling install/lib/scons-1.2.0.d20100117/SCons/Tool/fortran.py to fortran.pyc
+byte-compiling install/lib/scons-1.2.0.d20100117/SCons/Tool/FortranCommon.py to FortranCommon.pyc
+byte-compiling install/lib/scons-1.2.0.d20100117/SCons/Tool/g++.py to g++.pyc
+byte-compiling install/lib/scons-1.2.0.d20100117/SCons/Tool/g77.py to g77.pyc
+byte-compiling install/lib/scons-1.2.0.d20100117/SCons/Tool/gas.py to gas.pyc
+byte-compiling install/lib/scons-1.2.0.d20100117/SCons/Tool/gcc.py to gcc.pyc
+byte-compiling install/lib/scons-1.2.0.d20100117/SCons/Tool/gfortran.py to gfortran.pyc
+byte-compiling install/lib/scons-1.2.0.d20100117/SCons/Tool/gnulink.py to gnulink.pyc
+byte-compiling install/lib/scons-1.2.0.d20100117/SCons/Tool/gs.py to gs.pyc
+byte-compiling install/lib/scons-1.2.0.d20100117/SCons/Tool/hpc++.py to hpc++.pyc
+byte-compiling install/lib/scons-1.2.0.d20100117/SCons/Tool/hpcc.py to hpcc.pyc
+byte-compiling install/lib/scons-1.2.0.d20100117/SCons/Tool/hplink.py to hplink.pyc
+byte-compiling install/lib/scons-1.2.0.d20100117/SCons/Tool/icc.py to icc.pyc
+byte-compiling install/lib/scons-1.2.0.d20100117/SCons/Tool/icl.py to icl.pyc
+byte-compiling install/lib/scons-1.2.0.d20100117/SCons/Tool/ifl.py to ifl.pyc
+byte-compiling install/lib/scons-1.2.0.d20100117/SCons/Tool/ifort.py to ifort.pyc
+byte-compiling install/lib/scons-1.2.0.d20100117/SCons/Tool/ilink.py to ilink.pyc
+byte-compiling install/lib/scons-1.2.0.d20100117/SCons/Tool/ilink32.py to ilink32.pyc
+byte-compiling install/lib/scons-1.2.0.d20100117/SCons/Tool/install.py to install.pyc
+byte-compiling install/lib/scons-1.2.0.d20100117/SCons/Tool/intelc.py to intelc.pyc
+byte-compiling install/lib/scons-1.2.0.d20100117/SCons/Tool/ipkg.py to ipkg.pyc
+byte-compiling install/lib/scons-1.2.0.d20100117/SCons/Tool/jar.py to jar.pyc
+byte-compiling install/lib/scons-1.2.0.d20100117/SCons/Tool/javac.py to javac.pyc
+byte-compiling install/lib/scons-1.2.0.d20100117/SCons/Tool/JavaCommon.py to JavaCommon.pyc
+byte-compiling install/lib/scons-1.2.0.d20100117/SCons/Tool/javah.py to javah.pyc
+byte-compiling install/lib/scons-1.2.0.d20100117/SCons/Tool/latex.py to latex.pyc
+byte-compiling install/lib/scons-1.2.0.d20100117/SCons/Tool/lex.py to lex.pyc
+byte-compiling install/lib/scons-1.2.0.d20100117/SCons/Tool/link.py to link.pyc
+byte-compiling install/lib/scons-1.2.0.d20100117/SCons/Tool/linkloc.py to linkloc.pyc
+byte-compiling install/lib/scons-1.2.0.d20100117/SCons/Tool/m4.py to m4.pyc
+byte-compiling install/lib/scons-1.2.0.d20100117/SCons/Tool/masm.py to masm.pyc
+byte-compiling install/lib/scons-1.2.0.d20100117/SCons/Tool/midl.py to midl.pyc
+byte-compiling install/lib/scons-1.2.0.d20100117/SCons/Tool/mingw.py to mingw.pyc
+byte-compiling install/lib/scons-1.2.0.d20100117/SCons/Tool/MSCommon/__init__.py to __init__.pyc
+byte-compiling install/lib/scons-1.2.0.d20100117/SCons/Tool/MSCommon/arch.py to arch.pyc
+byte-compiling install/lib/scons-1.2.0.d20100117/SCons/Tool/MSCommon/common.py to common.pyc
+byte-compiling install/lib/scons-1.2.0.d20100117/SCons/Tool/MSCommon/netframework.py to netframework.pyc
+byte-compiling install/lib/scons-1.2.0.d20100117/SCons/Tool/MSCommon/sdk.py to sdk.pyc
+byte-compiling install/lib/scons-1.2.0.d20100117/SCons/Tool/MSCommon/vc.py to vc.pyc
+byte-compiling install/lib/scons-1.2.0.d20100117/SCons/Tool/MSCommon/vs.py to vs.pyc
+byte-compiling install/lib/scons-1.2.0.d20100117/SCons/Tool/mslib.py to mslib.pyc
+byte-compiling install/lib/scons-1.2.0.d20100117/SCons/Tool/mslink.py to mslink.pyc
+byte-compiling install/lib/scons-1.2.0.d20100117/SCons/Tool/mssdk.py to mssdk.pyc
+byte-compiling install/lib/scons-1.2.0.d20100117/SCons/Tool/msvc.py to msvc.pyc
+byte-compiling install/lib/scons-1.2.0.d20100117/SCons/Tool/msvs.py to msvs.pyc
+byte-compiling install/lib/scons-1.2.0.d20100117/SCons/Tool/mwcc.py to mwcc.pyc
+byte-compiling install/lib/scons-1.2.0.d20100117/SCons/Tool/mwld.py to mwld.pyc
+byte-compiling install/lib/scons-1.2.0.d20100117/SCons/Tool/nasm.py to nasm.pyc
+byte-compiling install/lib/scons-1.2.0.d20100117/SCons/Tool/packaging/__init__.py to __init__.pyc
+byte-compiling install/lib/scons-1.2.0.d20100117/SCons/Tool/packaging/ipk.py to ipk.pyc
+byte-compiling install/lib/scons-1.2.0.d20100117/SCons/Tool/packaging/msi.py to msi.pyc
+byte-compiling install/lib/scons-1.2.0.d20100117/SCons/Tool/packaging/rpm.py to rpm.pyc
+byte-compiling install/lib/scons-1.2.0.d20100117/SCons/Tool/packaging/src_tarbz2.py to src_tarbz2.pyc
+byte-compiling install/lib/scons-1.2.0.d20100117/SCons/Tool/packaging/src_targz.py to src_targz.pyc
+byte-compiling install/lib/scons-1.2.0.d20100117/SCons/Tool/packaging/src_zip.py to src_zip.pyc
+byte-compiling install/lib/scons-1.2.0.d20100117/SCons/Tool/packaging/tarbz2.py to tarbz2.pyc
+byte-compiling install/lib/scons-1.2.0.d20100117/SCons/Tool/packaging/targz.py to targz.pyc
+byte-compiling install/lib/scons-1.2.0.d20100117/SCons/Tool/packaging/zip.py to zip.pyc
+byte-compiling install/lib/scons-1.2.0.d20100117/SCons/Tool/pdf.py to pdf.pyc
+byte-compiling install/lib/scons-1.2.0.d20100117/SCons/Tool/pdflatex.py to pdflatex.pyc
+byte-compiling install/lib/scons-1.2.0.d20100117/SCons/Tool/pdftex.py to pdftex.pyc
+byte-compiling install/lib/scons-1.2.0.d20100117/SCons/Tool/Perforce.py to Perforce.pyc
+byte-compiling install/lib/scons-1.2.0.d20100117/SCons/Tool/PharLapCommon.py to PharLapCommon.pyc
+byte-compiling install/lib/scons-1.2.0.d20100117/SCons/Tool/qt.py to qt.pyc
+byte-compiling install/lib/scons-1.2.0.d20100117/SCons/Tool/RCS.py to RCS.pyc
+byte-compiling install/lib/scons-1.2.0.d20100117/SCons/Tool/rmic.py to rmic.pyc
+byte-compiling install/lib/scons-1.2.0.d20100117/SCons/Tool/rpcgen.py to rpcgen.pyc
+byte-compiling install/lib/scons-1.2.0.d20100117/SCons/Tool/rpm.py to rpm.pyc
+byte-compiling install/lib/scons-1.2.0.d20100117/SCons/Tool/SCCS.py to SCCS.pyc
+byte-compiling install/lib/scons-1.2.0.d20100117/SCons/Tool/sgiar.py to sgiar.pyc
+byte-compiling install/lib/scons-1.2.0.d20100117/SCons/Tool/sgic++.py to sgic++.pyc
+byte-compiling install/lib/scons-1.2.0.d20100117/SCons/Tool/sgicc.py to sgicc.pyc
+byte-compiling install/lib/scons-1.2.0.d20100117/SCons/Tool/sgilink.py to sgilink.pyc
+byte-compiling install/lib/scons-1.2.0.d20100117/SCons/Tool/Subversion.py to Subversion.pyc
+byte-compiling install/lib/scons-1.2.0.d20100117/SCons/Tool/sunar.py to sunar.pyc
+byte-compiling install/lib/scons-1.2.0.d20100117/SCons/Tool/sunc++.py to sunc++.pyc
+byte-compiling install/lib/scons-1.2.0.d20100117/SCons/Tool/suncc.py to suncc.pyc
+byte-compiling install/lib/scons-1.2.0.d20100117/SCons/Tool/sunf77.py to sunf77.pyc
+byte-compiling install/lib/scons-1.2.0.d20100117/SCons/Tool/sunf90.py to sunf90.pyc
+byte-compiling install/lib/scons-1.2.0.d20100117/SCons/Tool/sunf95.py to sunf95.pyc
+byte-compiling install/lib/scons-1.2.0.d20100117/SCons/Tool/sunlink.py to sunlink.pyc
+byte-compiling install/lib/scons-1.2.0.d20100117/SCons/Tool/swig.py to swig.pyc
+byte-compiling install/lib/scons-1.2.0.d20100117/SCons/Tool/tar.py to tar.pyc
+byte-compiling install/lib/scons-1.2.0.d20100117/SCons/Tool/tex.py to tex.pyc
+byte-compiling install/lib/scons-1.2.0.d20100117/SCons/Tool/textfile.py to textfile.pyc
+byte-compiling install/lib/scons-1.2.0.d20100117/SCons/Tool/tlib.py to tlib.pyc
+byte-compiling install/lib/scons-1.2.0.d20100117/SCons/Tool/wix.py to wix.pyc
+byte-compiling install/lib/scons-1.2.0.d20100117/SCons/Tool/yacc.py to yacc.pyc
+byte-compiling install/lib/scons-1.2.0.d20100117/SCons/Tool/zip.py to zip.pyc
+byte-compiling install/lib/scons-1.2.0.d20100117/SCons/Util.py to Util.pyc
+byte-compiling install/lib/scons-1.2.0.d20100117/SCons/Variables/__init__.py to __init__.pyc
+byte-compiling install/lib/scons-1.2.0.d20100117/SCons/Variables/BoolVariable.py to BoolVariable.pyc
+byte-compiling install/lib/scons-1.2.0.d20100117/SCons/Variables/EnumVariable.py to EnumVariable.pyc
+byte-compiling install/lib/scons-1.2.0.d20100117/SCons/Variables/ListVariable.py to ListVariable.pyc
+byte-compiling install/lib/scons-1.2.0.d20100117/SCons/Variables/PackageVariable.py to PackageVariable.pyc
+byte-compiling install/lib/scons-1.2.0.d20100117/SCons/Variables/PathVariable.py to PathVariable.pyc
+byte-compiling install/lib/scons-1.2.0.d20100117/SCons/Warnings.py to Warnings.pyc
+running install_scripts
+creating install/bin
+copying script/scons -> install/bin/scons-1.2.0.d20100117
+copying script/scons -> install/bin
+copying script/sconsign -> install/bin/sconsign-1.2.0.d20100117
+copying script/sconsign -> install/bin
+copying script/scons-time -> install/bin/scons-time-1.2.0.d20100117
+copying script/scons-time -> install/bin
+changing mode of install/bin/scons-1.2.0.d20100117
+changing mode of install/bin/scons
+changing mode of install/bin/sconsign-1.2.0.d20100117
+changing mode of install/bin/sconsign
+changing mode of install/bin/scons-time-1.2.0.d20100117
+changing mode of install/bin/scons-time
+running install_data
+creating install/man
+creating install/man/man1
+copying scons.1 -> install/man/man1
+copying sconsign.1 -> install/man/man1
+copying scons-time.1 -> install/man/man1
+running install_egg_info
+Writing install/lib/scons-1.2.0.d20100117/scons-1.2.0.d20100117-py2.7.egg-info
+Installed SCons library modules into install/lib/scons-1.2.0.d20100117
+Installed SCons scripts into install/bin
+Installed SCons man pages into install/man/man1
+cp -r 3.1.8 build/v8
+patch -td build/v8 -i ../../fpic-on-linux-amd64.patch
+patching file SConstruct
+Hunk #1 succeeded at 162 (offset 23 lines).
+cd build/v8 && GCC_VERSION=42 ../scons/install/bin/scons arch=x64
+scons: Reading SConscript files ...
+
+scons: warning: Ignoring missing SConscript 'obj/test/release/SConscript'
+File "/Users/daimler456/Desktop/Programs/bestly/vendor/bundle/ruby/1.9.1/gems/therubyracer-0.8.2/ext/v8/upstream/build/v8/SConstruct", line 1141, in BuildSpecific
+scons: done reading SConscript files.
+scons: Building targets ...
+g++ -o obj/release/accessors.o -c -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -fno-rtti -fno-exceptions -fvisibility=hidden -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -DV8_TARGET_ARCH_X64 -DENABLE_VMSTATE_TRACKING -DENABLE_LOGGING_AND_PROFILING -DENABLE_DEBUGGER_SUPPORT -Isrc src/accessors.cc
+g++ -o obj/release/allocation.o -c -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -fno-rtti -fno-exceptions -fvisibility=hidden -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -DV8_TARGET_ARCH_X64 -DENABLE_VMSTATE_TRACKING -DENABLE_LOGGING_AND_PROFILING -DENABLE_DEBUGGER_SUPPORT -Isrc src/allocation.cc
+g++ -o obj/release/api.o -c -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -fno-rtti -fno-exceptions -fvisibility=hidden -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -DV8_TARGET_ARCH_X64 -DENABLE_VMSTATE_TRACKING -DENABLE_LOGGING_AND_PROFILING -DENABLE_DEBUGGER_SUPPORT -Isrc src/api.cc
+g++ -o obj/release/assembler.o -c -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -fno-rtti -fno-exceptions -fvisibility=hidden -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -DV8_TARGET_ARCH_X64 -DENABLE_VMSTATE_TRACKING -DENABLE_LOGGING_AND_PROFILING -DENABLE_DEBUGGER_SUPPORT -Isrc src/assembler.cc
+g++ -o obj/release/ast.o -c -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -fno-rtti -fno-exceptions -fvisibility=hidden -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -DV8_TARGET_ARCH_X64 -DENABLE_VMSTATE_TRACKING -DENABLE_LOGGING_AND_PROFILING -DENABLE_DEBUGGER_SUPPORT -Isrc src/ast.cc
+g++ -o obj/release/atomicops_internals_x86_gcc.o -c -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -fno-rtti -fno-exceptions -fvisibility=hidden -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -DV8_TARGET_ARCH_X64 -DENABLE_VMSTATE_TRACKING -DENABLE_LOGGING_AND_PROFILING -DENABLE_DEBUGGER_SUPPORT -Isrc src/atomicops_internals_x86_gcc.cc
+g++ -o obj/release/bignum-dtoa.o -c -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -fno-rtti -fno-exceptions -fvisibility=hidden -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -DV8_TARGET_ARCH_X64 -DENABLE_VMSTATE_TRACKING -DENABLE_LOGGING_AND_PROFILING -DENABLE_DEBUGGER_SUPPORT -Isrc src/bignum-dtoa.cc
+g++ -o obj/release/bignum.o -c -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -fno-rtti -fno-exceptions -fvisibility=hidden -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -DV8_TARGET_ARCH_X64 -DENABLE_VMSTATE_TRACKING -DENABLE_LOGGING_AND_PROFILING -DENABLE_DEBUGGER_SUPPORT -Isrc src/bignum.cc
+g++ -o obj/release/bootstrapper.o -c -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -fno-rtti -fno-exceptions -fvisibility=hidden -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -DV8_TARGET_ARCH_X64 -DENABLE_VMSTATE_TRACKING -DENABLE_LOGGING_AND_PROFILING -DENABLE_DEBUGGER_SUPPORT -Isrc src/bootstrapper.cc
+g++ -o obj/release/builtins.o -c -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -fno-rtti -fno-exceptions -fvisibility=hidden -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -DV8_TARGET_ARCH_X64 -DENABLE_VMSTATE_TRACKING -DENABLE_LOGGING_AND_PROFILING -DENABLE_DEBUGGER_SUPPORT -Isrc src/builtins.cc
+g++ -o obj/release/cached-powers.o -c -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -fno-rtti -fno-exceptions -fvisibility=hidden -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -DV8_TARGET_ARCH_X64 -DENABLE_VMSTATE_TRACKING -DENABLE_LOGGING_AND_PROFILING -DENABLE_DEBUGGER_SUPPORT -Isrc src/cached-powers.cc
+g++ -o obj/release/checks.o -c -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -fno-rtti -fno-exceptions -fvisibility=hidden -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -DV8_TARGET_ARCH_X64 -DENABLE_VMSTATE_TRACKING -DENABLE_LOGGING_AND_PROFILING -DENABLE_DEBUGGER_SUPPORT -Isrc src/checks.cc
+g++ -o obj/release/circular-queue.o -c -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -fno-rtti -fno-exceptions -fvisibility=hidden -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -DV8_TARGET_ARCH_X64 -DENABLE_VMSTATE_TRACKING -DENABLE_LOGGING_AND_PROFILING -DENABLE_DEBUGGER_SUPPORT -Isrc src/circular-queue.cc
+g++ -o obj/release/code-stubs.o -c -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -fno-rtti -fno-exceptions -fvisibility=hidden -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -DV8_TARGET_ARCH_X64 -DENABLE_VMSTATE_TRACKING -DENABLE_LOGGING_AND_PROFILING -DENABLE_DEBUGGER_SUPPORT -Isrc src/code-stubs.cc
+g++ -o obj/release/codegen.o -c -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -fno-rtti -fno-exceptions -fvisibility=hidden -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -DV8_TARGET_ARCH_X64 -DENABLE_VMSTATE_TRACKING -DENABLE_LOGGING_AND_PROFILING -DENABLE_DEBUGGER_SUPPORT -Isrc src/codegen.cc
+g++ -o obj/release/compilation-cache.o -c -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -fno-rtti -fno-exceptions -fvisibility=hidden -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -DV8_TARGET_ARCH_X64 -DENABLE_VMSTATE_TRACKING -DENABLE_LOGGING_AND_PROFILING -DENABLE_DEBUGGER_SUPPORT -Isrc src/compilation-cache.cc
+g++ -o obj/release/compiler.o -c -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -fno-rtti -fno-exceptions -fvisibility=hidden -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -DV8_TARGET_ARCH_X64 -DENABLE_VMSTATE_TRACKING -DENABLE_LOGGING_AND_PROFILING -DENABLE_DEBUGGER_SUPPORT -Isrc src/compiler.cc
+g++ -o obj/release/contexts.o -c -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -fno-rtti -fno-exceptions -fvisibility=hidden -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -DV8_TARGET_ARCH_X64 -DENABLE_VMSTATE_TRACKING -DENABLE_LOGGING_AND_PROFILING -DENABLE_DEBUGGER_SUPPORT -Isrc src/contexts.cc
+g++ -o obj/release/conversions.o -c -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -fno-rtti -fno-exceptions -fvisibility=hidden -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -DV8_TARGET_ARCH_X64 -DENABLE_VMSTATE_TRACKING -DENABLE_LOGGING_AND_PROFILING -DENABLE_DEBUGGER_SUPPORT -Isrc src/conversions.cc
+g++ -o obj/release/counters.o -c -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -fno-rtti -fno-exceptions -fvisibility=hidden -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -DV8_TARGET_ARCH_X64 -DENABLE_VMSTATE_TRACKING -DENABLE_LOGGING_AND_PROFILING -DENABLE_DEBUGGER_SUPPORT -Isrc src/counters.cc
+g++ -o obj/release/cpu-profiler.o -c -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -fno-rtti -fno-exceptions -fvisibility=hidden -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -DV8_TARGET_ARCH_X64 -DENABLE_VMSTATE_TRACKING -DENABLE_LOGGING_AND_PROFILING -DENABLE_DEBUGGER_SUPPORT -Isrc src/cpu-profiler.cc
+g++ -o obj/release/data-flow.o -c -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -fno-rtti -fno-exceptions -fvisibility=hidden -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -DV8_TARGET_ARCH_X64 -DENABLE_VMSTATE_TRACKING -DENABLE_LOGGING_AND_PROFILING -DENABLE_DEBUGGER_SUPPORT -Isrc src/data-flow.cc
+g++ -o obj/release/dateparser.o -c -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -fno-rtti -fno-exceptions -fvisibility=hidden -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -DV8_TARGET_ARCH_X64 -DENABLE_VMSTATE_TRACKING -DENABLE_LOGGING_AND_PROFILING -DENABLE_DEBUGGER_SUPPORT -Isrc src/dateparser.cc
+g++ -o obj/release/debug-agent.o -c -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -fno-rtti -fno-exceptions -fvisibility=hidden -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -DV8_TARGET_ARCH_X64 -DENABLE_VMSTATE_TRACKING -DENABLE_LOGGING_AND_PROFILING -DENABLE_DEBUGGER_SUPPORT -Isrc src/debug-agent.cc
+g++ -o obj/release/debug.o -c -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -fno-rtti -fno-exceptions -fvisibility=hidden -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -DV8_TARGET_ARCH_X64 -DENABLE_VMSTATE_TRACKING -DENABLE_LOGGING_AND_PROFILING -DENABLE_DEBUGGER_SUPPORT -Isrc src/debug.cc
+g++ -o obj/release/deoptimizer.o -c -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -fno-rtti -fno-exceptions -fvisibility=hidden -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -DV8_TARGET_ARCH_X64 -DENABLE_VMSTATE_TRACKING -DENABLE_LOGGING_AND_PROFILING -DENABLE_DEBUGGER_SUPPORT -Isrc src/deoptimizer.cc
+g++ -o obj/release/disassembler.o -c -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -fno-rtti -fno-exceptions -fvisibility=hidden -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -DV8_TARGET_ARCH_X64 -DENABLE_VMSTATE_TRACKING -DENABLE_LOGGING_AND_PROFILING -DENABLE_DEBUGGER_SUPPORT -Isrc src/disassembler.cc
+g++ -o obj/release/diy-fp.o -c -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -fno-rtti -fno-exceptions -fvisibility=hidden -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -DV8_TARGET_ARCH_X64 -DENABLE_VMSTATE_TRACKING -DENABLE_LOGGING_AND_PROFILING -DENABLE_DEBUGGER_SUPPORT -Isrc src/diy-fp.cc
+g++ -o obj/release/dtoa.o -c -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -fno-rtti -fno-exceptions -fvisibility=hidden -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -DV8_TARGET_ARCH_X64 -DENABLE_VMSTATE_TRACKING -DENABLE_LOGGING_AND_PROFILING -DENABLE_DEBUGGER_SUPPORT -Isrc src/dtoa.cc
+g++ -o obj/release/execution.o -c -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -fno-rtti -fno-exceptions -fvisibility=hidden -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -DV8_TARGET_ARCH_X64 -DENABLE_VMSTATE_TRACKING -DENABLE_LOGGING_AND_PROFILING -DENABLE_DEBUGGER_SUPPORT -Isrc src/execution.cc
+g++ -o obj/release/extensions/externalize-string-extension.o -c -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -fno-rtti -fno-exceptions -fvisibility=hidden -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -DV8_TARGET_ARCH_X64 -DENABLE_VMSTATE_TRACKING -DENABLE_LOGGING_AND_PROFILING -DENABLE_DEBUGGER_SUPPORT -Isrc src/extensions/externalize-string-extension.cc
+g++ -o obj/release/extensions/gc-extension.o -c -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -fno-rtti -fno-exceptions -fvisibility=hidden -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -DV8_TARGET_ARCH_X64 -DENABLE_VMSTATE_TRACKING -DENABLE_LOGGING_AND_PROFILING -DENABLE_DEBUGGER_SUPPORT -Isrc src/extensions/gc-extension.cc
+g++ -o obj/release/factory.o -c -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -fno-rtti -fno-exceptions -fvisibility=hidden -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -DV8_TARGET_ARCH_X64 -DENABLE_VMSTATE_TRACKING -DENABLE_LOGGING_AND_PROFILING -DENABLE_DEBUGGER_SUPPORT -Isrc src/factory.cc
+g++ -o obj/release/fast-dtoa.o -c -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -fno-rtti -fno-exceptions -fvisibility=hidden -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -DV8_TARGET_ARCH_X64 -DENABLE_VMSTATE_TRACKING -DENABLE_LOGGING_AND_PROFILING -DENABLE_DEBUGGER_SUPPORT -Isrc src/fast-dtoa.cc
+g++ -o obj/release/fixed-dtoa.o -c -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -fno-rtti -fno-exceptions -fvisibility=hidden -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -DV8_TARGET_ARCH_X64 -DENABLE_VMSTATE_TRACKING -DENABLE_LOGGING_AND_PROFILING -DENABLE_DEBUGGER_SUPPORT -Isrc src/fixed-dtoa.cc
+g++ -o obj/release/flags.o -c -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -fno-rtti -fno-exceptions -fvisibility=hidden -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -DV8_TARGET_ARCH_X64 -DENABLE_VMSTATE_TRACKING -DENABLE_LOGGING_AND_PROFILING -DENABLE_DEBUGGER_SUPPORT -Isrc src/flags.cc
+g++ -o obj/release/frame-element.o -c -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -fno-rtti -fno-exceptions -fvisibility=hidden -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -DV8_TARGET_ARCH_X64 -DENABLE_VMSTATE_TRACKING -DENABLE_LOGGING_AND_PROFILING -DENABLE_DEBUGGER_SUPPORT -Isrc src/frame-element.cc
+g++ -o obj/release/frames.o -c -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -fno-rtti -fno-exceptions -fvisibility=hidden -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -DV8_TARGET_ARCH_X64 -DENABLE_VMSTATE_TRACKING -DENABLE_LOGGING_AND_PROFILING -DENABLE_DEBUGGER_SUPPORT -Isrc src/frames.cc
+g++ -o obj/release/full-codegen.o -c -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -fno-rtti -fno-exceptions -fvisibility=hidden -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -DV8_TARGET_ARCH_X64 -DENABLE_VMSTATE_TRACKING -DENABLE_LOGGING_AND_PROFILING -DENABLE_DEBUGGER_SUPPORT -Isrc src/full-codegen.cc
+g++ -o obj/release/func-name-inferrer.o -c -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -fno-rtti -fno-exceptions -fvisibility=hidden -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -DV8_TARGET_ARCH_X64 -DENABLE_VMSTATE_TRACKING -DENABLE_LOGGING_AND_PROFILING -DENABLE_DEBUGGER_SUPPORT -Isrc src/func-name-inferrer.cc
+g++ -o obj/release/gdb-jit.o -c -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -fno-rtti -fno-exceptions -fvisibility=hidden -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -DV8_TARGET_ARCH_X64 -DENABLE_VMSTATE_TRACKING -DENABLE_LOGGING_AND_PROFILING -DENABLE_DEBUGGER_SUPPORT -Isrc src/gdb-jit.cc
+g++ -o obj/release/global-handles.o -c -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -fno-rtti -fno-exceptions -fvisibility=hidden -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -DV8_TARGET_ARCH_X64 -DENABLE_VMSTATE_TRACKING -DENABLE_LOGGING_AND_PROFILING -DENABLE_DEBUGGER_SUPPORT -Isrc src/global-handles.cc
+g++ -o obj/release/handles.o -c -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -fno-rtti -fno-exceptions -fvisibility=hidden -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -DV8_TARGET_ARCH_X64 -DENABLE_VMSTATE_TRACKING -DENABLE_LOGGING_AND_PROFILING -DENABLE_DEBUGGER_SUPPORT -Isrc src/handles.cc
+g++ -o obj/release/hashmap.o -c -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -fno-rtti -fno-exceptions -fvisibility=hidden -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -DV8_TARGET_ARCH_X64 -DENABLE_VMSTATE_TRACKING -DENABLE_LOGGING_AND_PROFILING -DENABLE_DEBUGGER_SUPPORT -Isrc src/hashmap.cc
+g++ -o obj/release/heap-profiler.o -c -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -fno-rtti -fno-exceptions -fvisibility=hidden -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -DV8_TARGET_ARCH_X64 -DENABLE_VMSTATE_TRACKING -DENABLE_LOGGING_AND_PROFILING -DENABLE_DEBUGGER_SUPPORT -Isrc src/heap-profiler.cc
+g++ -o obj/release/heap.o -c -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -fno-rtti -fno-exceptions -fvisibility=hidden -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -DV8_TARGET_ARCH_X64 -DENABLE_VMSTATE_TRACKING -DENABLE_LOGGING_AND_PROFILING -DENABLE_DEBUGGER_SUPPORT -Isrc src/heap.cc
+g++ -o obj/release/hydrogen-instructions.o -c -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -fno-rtti -fno-exceptions -fvisibility=hidden -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -DV8_TARGET_ARCH_X64 -DENABLE_VMSTATE_TRACKING -DENABLE_LOGGING_AND_PROFILING -DENABLE_DEBUGGER_SUPPORT -Isrc src/hydrogen-instructions.cc
+g++ -o obj/release/hydrogen.o -c -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -fno-rtti -fno-exceptions -fvisibility=hidden -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -DV8_TARGET_ARCH_X64 -DENABLE_VMSTATE_TRACKING -DENABLE_LOGGING_AND_PROFILING -DENABLE_DEBUGGER_SUPPORT -Isrc src/hydrogen.cc
+g++ -o obj/release/ic.o -c -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -fno-rtti -fno-exceptions -fvisibility=hidden -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -DV8_TARGET_ARCH_X64 -DENABLE_VMSTATE_TRACKING -DENABLE_LOGGING_AND_PROFILING -DENABLE_DEBUGGER_SUPPORT -Isrc src/ic.cc
+g++ -o obj/release/inspector.o -c -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -fno-rtti -fno-exceptions -fvisibility=hidden -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -DV8_TARGET_ARCH_X64 -DENABLE_VMSTATE_TRACKING -DENABLE_LOGGING_AND_PROFILING -DENABLE_DEBUGGER_SUPPORT -Isrc src/inspector.cc
+g++ -o obj/release/interpreter-irregexp.o -c -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -fno-rtti -fno-exceptions -fvisibility=hidden -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -DV8_TARGET_ARCH_X64 -DENABLE_VMSTATE_TRACKING -DENABLE_LOGGING_AND_PROFILING -DENABLE_DEBUGGER_SUPPORT -Isrc src/interpreter-irregexp.cc
+g++ -o obj/release/jsregexp.o -c -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -fno-rtti -fno-exceptions -fvisibility=hidden -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -DV8_TARGET_ARCH_X64 -DENABLE_VMSTATE_TRACKING -DENABLE_LOGGING_AND_PROFILING -DENABLE_DEBUGGER_SUPPORT -Isrc src/jsregexp.cc
+g++ -o obj/release/jump-target-heavy.o -c -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -fno-rtti -fno-exceptions -fvisibility=hidden -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -DV8_TARGET_ARCH_X64 -DENABLE_VMSTATE_TRACKING -DENABLE_LOGGING_AND_PROFILING -DENABLE_DEBUGGER_SUPPORT -Isrc src/jump-target-heavy.cc
+g++ -o obj/release/jump-target.o -c -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -fno-rtti -fno-exceptions -fvisibility=hidden -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -DV8_TARGET_ARCH_X64 -DENABLE_VMSTATE_TRACKING -DENABLE_LOGGING_AND_PROFILING -DENABLE_DEBUGGER_SUPPORT -Isrc src/jump-target.cc
+g++ -o obj/release/lithium-allocator.o -c -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -fno-rtti -fno-exceptions -fvisibility=hidden -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -DV8_TARGET_ARCH_X64 -DENABLE_VMSTATE_TRACKING -DENABLE_LOGGING_AND_PROFILING -DENABLE_DEBUGGER_SUPPORT -Isrc src/lithium-allocator.cc
+g++ -o obj/release/lithium.o -c -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -fno-rtti -fno-exceptions -fvisibility=hidden -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -DV8_TARGET_ARCH_X64 -DENABLE_VMSTATE_TRACKING -DENABLE_LOGGING_AND_PROFILING -DENABLE_DEBUGGER_SUPPORT -Isrc src/lithium.cc
+g++ -o obj/release/liveedit.o -c -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -fno-rtti -fno-exceptions -fvisibility=hidden -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -DV8_TARGET_ARCH_X64 -DENABLE_VMSTATE_TRACKING -DENABLE_LOGGING_AND_PROFILING -DENABLE_DEBUGGER_SUPPORT -Isrc src/liveedit.cc
+g++ -o obj/release/liveobjectlist.o -c -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -fno-rtti -fno-exceptions -fvisibility=hidden -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -DV8_TARGET_ARCH_X64 -DENABLE_VMSTATE_TRACKING -DENABLE_LOGGING_AND_PROFILING -DENABLE_DEBUGGER_SUPPORT -Isrc src/liveobjectlist.cc
+g++ -o obj/release/log-utils.o -c -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -fno-rtti -fno-exceptions -fvisibility=hidden -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -DV8_TARGET_ARCH_X64 -DENABLE_VMSTATE_TRACKING -DENABLE_LOGGING_AND_PROFILING -DENABLE_DEBUGGER_SUPPORT -Isrc src/log-utils.cc
+g++ -o obj/release/log.o -c -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -fno-rtti -fno-exceptions -fvisibility=hidden -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -DV8_TARGET_ARCH_X64 -DENABLE_VMSTATE_TRACKING -DENABLE_LOGGING_AND_PROFILING -DENABLE_DEBUGGER_SUPPORT -Isrc src/log.cc
+g++ -o obj/release/mark-compact.o -c -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -fno-rtti -fno-exceptions -fvisibility=hidden -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -DV8_TARGET_ARCH_X64 -DENABLE_VMSTATE_TRACKING -DENABLE_LOGGING_AND_PROFILING -DENABLE_DEBUGGER_SUPPORT -Isrc src/mark-compact.cc
+g++ -o obj/release/messages.o -c -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -fno-rtti -fno-exceptions -fvisibility=hidden -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -DV8_TARGET_ARCH_X64 -DENABLE_VMSTATE_TRACKING -DENABLE_LOGGING_AND_PROFILING -DENABLE_DEBUGGER_SUPPORT -Isrc src/messages.cc
+g++ -o obj/release/objects-printer.o -c -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -fno-rtti -fno-exceptions -fvisibility=hidden -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -DV8_TARGET_ARCH_X64 -DENABLE_VMSTATE_TRACKING -DENABLE_LOGGING_AND_PROFILING -DENABLE_DEBUGGER_SUPPORT -Isrc src/objects-printer.cc
+g++ -o obj/release/objects-visiting.o -c -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -fno-rtti -fno-exceptions -fvisibility=hidden -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -DV8_TARGET_ARCH_X64 -DENABLE_VMSTATE_TRACKING -DENABLE_LOGGING_AND_PROFILING -DENABLE_DEBUGGER_SUPPORT -Isrc src/objects-visiting.cc
+g++ -o obj/release/objects.o -c -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -fno-rtti -fno-exceptions -fvisibility=hidden -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -DV8_TARGET_ARCH_X64 -DENABLE_VMSTATE_TRACKING -DENABLE_LOGGING_AND_PROFILING -DENABLE_DEBUGGER_SUPPORT -Isrc src/objects.cc
+g++ -o obj/release/parser.o -c -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -fno-rtti -fno-exceptions -fvisibility=hidden -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -DV8_TARGET_ARCH_X64 -DENABLE_VMSTATE_TRACKING -DENABLE_LOGGING_AND_PROFILING -DENABLE_DEBUGGER_SUPPORT -Isrc src/parser.cc
+g++ -o obj/release/platform-macos.o -c -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -fno-rtti -fno-exceptions -fvisibility=hidden -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -DV8_TARGET_ARCH_X64 -DENABLE_VMSTATE_TRACKING -DENABLE_LOGGING_AND_PROFILING -DENABLE_DEBUGGER_SUPPORT -Isrc src/platform-macos.cc
+g++ -o obj/release/platform-posix.o -c -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -fno-rtti -fno-exceptions -fvisibility=hidden -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -DV8_TARGET_ARCH_X64 -DENABLE_VMSTATE_TRACKING -DENABLE_LOGGING_AND_PROFILING -DENABLE_DEBUGGER_SUPPORT -Isrc src/platform-posix.cc
+g++ -o obj/release/preparse-data.o -c -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -fno-rtti -fno-exceptions -fvisibility=hidden -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -DV8_TARGET_ARCH_X64 -DENABLE_VMSTATE_TRACKING -DENABLE_LOGGING_AND_PROFILING -DENABLE_DEBUGGER_SUPPORT -Isrc src/preparse-data.cc
+g++ -o obj/release/preparser.o -c -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -fno-rtti -fno-exceptions -fvisibility=hidden -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -DV8_TARGET_ARCH_X64 -DENABLE_VMSTATE_TRACKING -DENABLE_LOGGING_AND_PROFILING -DENABLE_DEBUGGER_SUPPORT -Isrc src/preparser.cc
+g++ -o obj/release/profile-generator.o -c -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -fno-rtti -fno-exceptions -fvisibility=hidden -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -DV8_TARGET_ARCH_X64 -DENABLE_VMSTATE_TRACKING -DENABLE_LOGGING_AND_PROFILING -DENABLE_DEBUGGER_SUPPORT -Isrc src/profile-generator.cc
+g++ -o obj/release/property.o -c -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -fno-rtti -fno-exceptions -fvisibility=hidden -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -DV8_TARGET_ARCH_X64 -DENABLE_VMSTATE_TRACKING -DENABLE_LOGGING_AND_PROFILING -DENABLE_DEBUGGER_SUPPORT -Isrc src/property.cc
+g++ -o obj/release/regexp-macro-assembler-irregexp.o -c -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -fno-rtti -fno-exceptions -fvisibility=hidden -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -DV8_TARGET_ARCH_X64 -DENABLE_VMSTATE_TRACKING -DENABLE_LOGGING_AND_PROFILING -DENABLE_DEBUGGER_SUPPORT -Isrc src/regexp-macro-assembler-irregexp.cc
+g++ -o obj/release/regexp-macro-assembler.o -c -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -fno-rtti -fno-exceptions -fvisibility=hidden -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -DV8_TARGET_ARCH_X64 -DENABLE_VMSTATE_TRACKING -DENABLE_LOGGING_AND_PROFILING -DENABLE_DEBUGGER_SUPPORT -Isrc src/regexp-macro-assembler.cc
+g++ -o obj/release/regexp-stack.o -c -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -fno-rtti -fno-exceptions -fvisibility=hidden -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -DV8_TARGET_ARCH_X64 -DENABLE_VMSTATE_TRACKING -DENABLE_LOGGING_AND_PROFILING -DENABLE_DEBUGGER_SUPPORT -Isrc src/regexp-stack.cc
+g++ -o obj/release/register-allocator.o -c -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -fno-rtti -fno-exceptions -fvisibility=hidden -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -DV8_TARGET_ARCH_X64 -DENABLE_VMSTATE_TRACKING -DENABLE_LOGGING_AND_PROFILING -DENABLE_DEBUGGER_SUPPORT -Isrc src/register-allocator.cc
+g++ -o obj/release/rewriter.o -c -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -fno-rtti -fno-exceptions -fvisibility=hidden -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -DV8_TARGET_ARCH_X64 -DENABLE_VMSTATE_TRACKING -DENABLE_LOGGING_AND_PROFILING -DENABLE_DEBUGGER_SUPPORT -Isrc src/rewriter.cc
+g++ -o obj/release/runtime-profiler.o -c -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -fno-rtti -fno-exceptions -fvisibility=hidden -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -DV8_TARGET_ARCH_X64 -DENABLE_VMSTATE_TRACKING -DENABLE_LOGGING_AND_PROFILING -DENABLE_DEBUGGER_SUPPORT -Isrc src/runtime-profiler.cc
+g++ -o obj/release/runtime.o -c -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -fno-rtti -fno-exceptions -fvisibility=hidden -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -DV8_TARGET_ARCH_X64 -DENABLE_VMSTATE_TRACKING -DENABLE_LOGGING_AND_PROFILING -DENABLE_DEBUGGER_SUPPORT -Isrc src/runtime.cc
+g++ -o obj/release/safepoint-table.o -c -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -fno-rtti -fno-exceptions -fvisibility=hidden -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -DV8_TARGET_ARCH_X64 -DENABLE_VMSTATE_TRACKING -DENABLE_LOGGING_AND_PROFILING -DENABLE_DEBUGGER_SUPPORT -Isrc src/safepoint-table.cc
+g++ -o obj/release/scanner-base.o -c -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -fno-rtti -fno-exceptions -fvisibility=hidden -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -DV8_TARGET_ARCH_X64 -DENABLE_VMSTATE_TRACKING -DENABLE_LOGGING_AND_PROFILING -DENABLE_DEBUGGER_SUPPORT -Isrc src/scanner-base.cc
+g++ -o obj/release/scanner.o -c -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -fno-rtti -fno-exceptions -fvisibility=hidden -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -DV8_TARGET_ARCH_X64 -DENABLE_VMSTATE_TRACKING -DENABLE_LOGGING_AND_PROFILING -DENABLE_DEBUGGER_SUPPORT -Isrc src/scanner.cc
+g++ -o obj/release/scopeinfo.o -c -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -fno-rtti -fno-exceptions -fvisibility=hidden -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -DV8_TARGET_ARCH_X64 -DENABLE_VMSTATE_TRACKING -DENABLE_LOGGING_AND_PROFILING -DENABLE_DEBUGGER_SUPPORT -Isrc src/scopeinfo.cc
+g++ -o obj/release/scopes.o -c -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -fno-rtti -fno-exceptions -fvisibility=hidden -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -DV8_TARGET_ARCH_X64 -DENABLE_VMSTATE_TRACKING -DENABLE_LOGGING_AND_PROFILING -DENABLE_DEBUGGER_SUPPORT -Isrc src/scopes.cc
+g++ -o obj/release/serialize.o -c -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -fno-rtti -fno-exceptions -fvisibility=hidden -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -DV8_TARGET_ARCH_X64 -DENABLE_VMSTATE_TRACKING -DENABLE_LOGGING_AND_PROFILING -DENABLE_DEBUGGER_SUPPORT -Isrc src/serialize.cc
+g++ -o obj/release/snapshot-common.o -c -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -fno-rtti -fno-exceptions -fvisibility=hidden -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -DV8_TARGET_ARCH_X64 -DENABLE_VMSTATE_TRACKING -DENABLE_LOGGING_AND_PROFILING -DENABLE_DEBUGGER_SUPPORT -Isrc src/snapshot-common.cc
+g++ -o obj/release/spaces.o -c -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -fno-rtti -fno-exceptions -fvisibility=hidden -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -DV8_TARGET_ARCH_X64 -DENABLE_VMSTATE_TRACKING -DENABLE_LOGGING_AND_PROFILING -DENABLE_DEBUGGER_SUPPORT -Isrc src/spaces.cc
+g++ -o obj/release/string-search.o -c -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -fno-rtti -fno-exceptions -fvisibility=hidden -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -DV8_TARGET_ARCH_X64 -DENABLE_VMSTATE_TRACKING -DENABLE_LOGGING_AND_PROFILING -DENABLE_DEBUGGER_SUPPORT -Isrc src/string-search.cc
+g++ -o obj/release/string-stream.o -c -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -fno-rtti -fno-exceptions -fvisibility=hidden -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -DV8_TARGET_ARCH_X64 -DENABLE_VMSTATE_TRACKING -DENABLE_LOGGING_AND_PROFILING -DENABLE_DEBUGGER_SUPPORT -Isrc src/string-stream.cc
+g++ -o obj/release/strtod.o -c -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -fno-rtti -fno-exceptions -fvisibility=hidden -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -DV8_TARGET_ARCH_X64 -DENABLE_VMSTATE_TRACKING -DENABLE_LOGGING_AND_PROFILING -DENABLE_DEBUGGER_SUPPORT -Isrc src/strtod.cc
+g++ -o obj/release/stub-cache.o -c -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -fno-rtti -fno-exceptions -fvisibility=hidden -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -DV8_TARGET_ARCH_X64 -DENABLE_VMSTATE_TRACKING -DENABLE_LOGGING_AND_PROFILING -DENABLE_DEBUGGER_SUPPORT -Isrc src/stub-cache.cc
+g++ -o obj/release/token.o -c -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -fno-rtti -fno-exceptions -fvisibility=hidden -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -DV8_TARGET_ARCH_X64 -DENABLE_VMSTATE_TRACKING -DENABLE_LOGGING_AND_PROFILING -DENABLE_DEBUGGER_SUPPORT -Isrc src/token.cc
+g++ -o obj/release/top.o -c -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -fno-rtti -fno-exceptions -fvisibility=hidden -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -DV8_TARGET_ARCH_X64 -DENABLE_VMSTATE_TRACKING -DENABLE_LOGGING_AND_PROFILING -DENABLE_DEBUGGER_SUPPORT -Isrc src/top.cc
+g++ -o obj/release/type-info.o -c -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -fno-rtti -fno-exceptions -fvisibility=hidden -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -DV8_TARGET_ARCH_X64 -DENABLE_VMSTATE_TRACKING -DENABLE_LOGGING_AND_PROFILING -DENABLE_DEBUGGER_SUPPORT -Isrc src/type-info.cc
+g++ -o obj/release/unicode.o -c -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -fno-rtti -fno-exceptions -fvisibility=hidden -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -DV8_TARGET_ARCH_X64 -DENABLE_VMSTATE_TRACKING -DENABLE_LOGGING_AND_PROFILING -DENABLE_DEBUGGER_SUPPORT -Isrc src/unicode.cc
+g++ -o obj/release/utils.o -c -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -fno-rtti -fno-exceptions -fvisibility=hidden -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -DV8_TARGET_ARCH_X64 -DENABLE_VMSTATE_TRACKING -DENABLE_LOGGING_AND_PROFILING -DENABLE_DEBUGGER_SUPPORT -Isrc src/utils.cc
+g++ -o obj/release/v8-counters.o -c -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -fno-rtti -fno-exceptions -fvisibility=hidden -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -DV8_TARGET_ARCH_X64 -DENABLE_VMSTATE_TRACKING -DENABLE_LOGGING_AND_PROFILING -DENABLE_DEBUGGER_SUPPORT -Isrc src/v8-counters.cc
+g++ -o obj/release/v8.o -c -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -fno-rtti -fno-exceptions -fvisibility=hidden -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -DV8_TARGET_ARCH_X64 -DENABLE_VMSTATE_TRACKING -DENABLE_LOGGING_AND_PROFILING -DENABLE_DEBUGGER_SUPPORT -Isrc src/v8.cc
+g++ -o obj/release/v8threads.o -c -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -fno-rtti -fno-exceptions -fvisibility=hidden -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -DV8_TARGET_ARCH_X64 -DENABLE_VMSTATE_TRACKING -DENABLE_LOGGING_AND_PROFILING -DENABLE_DEBUGGER_SUPPORT -Isrc src/v8threads.cc
+g++ -o obj/release/variables.o -c -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -fno-rtti -fno-exceptions -fvisibility=hidden -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -DV8_TARGET_ARCH_X64 -DENABLE_VMSTATE_TRACKING -DENABLE_LOGGING_AND_PROFILING -DENABLE_DEBUGGER_SUPPORT -Isrc src/variables.cc
+g++ -o obj/release/version.o -c -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -fno-rtti -fno-exceptions -fvisibility=hidden -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -DV8_TARGET_ARCH_X64 -DENABLE_VMSTATE_TRACKING -DENABLE_LOGGING_AND_PROFILING -DENABLE_DEBUGGER_SUPPORT -Isrc src/version.cc
+g++ -o obj/release/virtual-frame-heavy.o -c -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -fno-rtti -fno-exceptions -fvisibility=hidden -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -DV8_TARGET_ARCH_X64 -DENABLE_VMSTATE_TRACKING -DENABLE_LOGGING_AND_PROFILING -DENABLE_DEBUGGER_SUPPORT -Isrc src/virtual-frame-heavy.cc
+g++ -o obj/release/virtual-frame.o -c -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -fno-rtti -fno-exceptions -fvisibility=hidden -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -DV8_TARGET_ARCH_X64 -DENABLE_VMSTATE_TRACKING -DENABLE_LOGGING_AND_PROFILING -DENABLE_DEBUGGER_SUPPORT -Isrc src/virtual-frame.cc
+g++ -o obj/release/x64/assembler-x64.o -c -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -fno-rtti -fno-exceptions -fvisibility=hidden -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -DV8_TARGET_ARCH_X64 -DENABLE_VMSTATE_TRACKING -DENABLE_LOGGING_AND_PROFILING -DENABLE_DEBUGGER_SUPPORT -Isrc src/x64/assembler-x64.cc
+g++ -o obj/release/x64/builtins-x64.o -c -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -fno-rtti -fno-exceptions -fvisibility=hidden -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -DV8_TARGET_ARCH_X64 -DENABLE_VMSTATE_TRACKING -DENABLE_LOGGING_AND_PROFILING -DENABLE_DEBUGGER_SUPPORT -Isrc src/x64/builtins-x64.cc
+g++ -o obj/release/x64/code-stubs-x64.o -c -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -fno-rtti -fno-exceptions -fvisibility=hidden -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -DV8_TARGET_ARCH_X64 -DENABLE_VMSTATE_TRACKING -DENABLE_LOGGING_AND_PROFILING -DENABLE_DEBUGGER_SUPPORT -Isrc src/x64/code-stubs-x64.cc
+g++ -o obj/release/x64/codegen-x64.o -c -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -fno-rtti -fno-exceptions -fvisibility=hidden -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -DV8_TARGET_ARCH_X64 -DENABLE_VMSTATE_TRACKING -DENABLE_LOGGING_AND_PROFILING -DENABLE_DEBUGGER_SUPPORT -Isrc src/x64/codegen-x64.cc
+g++ -o obj/release/x64/cpu-x64.o -c -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -fno-rtti -fno-exceptions -fvisibility=hidden -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -DV8_TARGET_ARCH_X64 -DENABLE_VMSTATE_TRACKING -DENABLE_LOGGING_AND_PROFILING -DENABLE_DEBUGGER_SUPPORT -Isrc src/x64/cpu-x64.cc
+g++ -o obj/release/x64/debug-x64.o -c -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -fno-rtti -fno-exceptions -fvisibility=hidden -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -DV8_TARGET_ARCH_X64 -DENABLE_VMSTATE_TRACKING -DENABLE_LOGGING_AND_PROFILING -DENABLE_DEBUGGER_SUPPORT -Isrc src/x64/debug-x64.cc
+g++ -o obj/release/x64/deoptimizer-x64.o -c -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -fno-rtti -fno-exceptions -fvisibility=hidden -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -DV8_TARGET_ARCH_X64 -DENABLE_VMSTATE_TRACKING -DENABLE_LOGGING_AND_PROFILING -DENABLE_DEBUGGER_SUPPORT -Isrc src/x64/deoptimizer-x64.cc
+g++ -o obj/release/x64/disasm-x64.o -c -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -fno-rtti -fno-exceptions -fvisibility=hidden -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -DV8_TARGET_ARCH_X64 -DENABLE_VMSTATE_TRACKING -DENABLE_LOGGING_AND_PROFILING -DENABLE_DEBUGGER_SUPPORT -Isrc src/x64/disasm-x64.cc
+g++ -o obj/release/x64/frames-x64.o -c -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -fno-rtti -fno-exceptions -fvisibility=hidden -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -DV8_TARGET_ARCH_X64 -DENABLE_VMSTATE_TRACKING -DENABLE_LOGGING_AND_PROFILING -DENABLE_DEBUGGER_SUPPORT -Isrc src/x64/frames-x64.cc
+g++ -o obj/release/x64/full-codegen-x64.o -c -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -fno-rtti -fno-exceptions -fvisibility=hidden -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -DV8_TARGET_ARCH_X64 -DENABLE_VMSTATE_TRACKING -DENABLE_LOGGING_AND_PROFILING -DENABLE_DEBUGGER_SUPPORT -Isrc src/x64/full-codegen-x64.cc
+g++ -o obj/release/x64/ic-x64.o -c -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -fno-rtti -fno-exceptions -fvisibility=hidden -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -DV8_TARGET_ARCH_X64 -DENABLE_VMSTATE_TRACKING -DENABLE_LOGGING_AND_PROFILING -DENABLE_DEBUGGER_SUPPORT -Isrc src/x64/ic-x64.cc
+g++ -o obj/release/x64/jump-target-x64.o -c -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -fno-rtti -fno-exceptions -fvisibility=hidden -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -DV8_TARGET_ARCH_X64 -DENABLE_VMSTATE_TRACKING -DENABLE_LOGGING_AND_PROFILING -DENABLE_DEBUGGER_SUPPORT -Isrc src/x64/jump-target-x64.cc
+g++ -o obj/release/x64/lithium-codegen-x64.o -c -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -fno-rtti -fno-exceptions -fvisibility=hidden -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -DV8_TARGET_ARCH_X64 -DENABLE_VMSTATE_TRACKING -DENABLE_LOGGING_AND_PROFILING -DENABLE_DEBUGGER_SUPPORT -Isrc src/x64/lithium-codegen-x64.cc
+g++ -o obj/release/x64/lithium-gap-resolver-x64.o -c -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -fno-rtti -fno-exceptions -fvisibility=hidden -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -DV8_TARGET_ARCH_X64 -DENABLE_VMSTATE_TRACKING -DENABLE_LOGGING_AND_PROFILING -DENABLE_DEBUGGER_SUPPORT -Isrc src/x64/lithium-gap-resolver-x64.cc
+g++ -o obj/release/x64/lithium-x64.o -c -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -fno-rtti -fno-exceptions -fvisibility=hidden -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -DV8_TARGET_ARCH_X64 -DENABLE_VMSTATE_TRACKING -DENABLE_LOGGING_AND_PROFILING -DENABLE_DEBUGGER_SUPPORT -Isrc src/x64/lithium-x64.cc
+g++ -o obj/release/x64/macro-assembler-x64.o -c -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -fno-rtti -fno-exceptions -fvisibility=hidden -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -DV8_TARGET_ARCH_X64 -DENABLE_VMSTATE_TRACKING -DENABLE_LOGGING_AND_PROFILING -DENABLE_DEBUGGER_SUPPORT -Isrc src/x64/macro-assembler-x64.cc
+g++ -o obj/release/x64/regexp-macro-assembler-x64.o -c -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -fno-rtti -fno-exceptions -fvisibility=hidden -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -DV8_TARGET_ARCH_X64 -DENABLE_VMSTATE_TRACKING -DENABLE_LOGGING_AND_PROFILING -DENABLE_DEBUGGER_SUPPORT -Isrc src/x64/regexp-macro-assembler-x64.cc
+g++ -o obj/release/x64/register-allocator-x64.o -c -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -fno-rtti -fno-exceptions -fvisibility=hidden -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -DV8_TARGET_ARCH_X64 -DENABLE_VMSTATE_TRACKING -DENABLE_LOGGING_AND_PROFILING -DENABLE_DEBUGGER_SUPPORT -Isrc src/x64/register-allocator-x64.cc
+g++ -o obj/release/x64/stub-cache-x64.o -c -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -fno-rtti -fno-exceptions -fvisibility=hidden -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -DV8_TARGET_ARCH_X64 -DENABLE_VMSTATE_TRACKING -DENABLE_LOGGING_AND_PROFILING -DENABLE_DEBUGGER_SUPPORT -Isrc src/x64/stub-cache-x64.cc
+g++ -o obj/release/x64/virtual-frame-x64.o -c -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -fno-rtti -fno-exceptions -fvisibility=hidden -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -DV8_TARGET_ARCH_X64 -DENABLE_VMSTATE_TRACKING -DENABLE_LOGGING_AND_PROFILING -DENABLE_DEBUGGER_SUPPORT -Isrc src/x64/virtual-frame-x64.cc
+g++ -o obj/release/zone.o -c -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -fno-rtti -fno-exceptions -fvisibility=hidden -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -DV8_TARGET_ARCH_X64 -DENABLE_VMSTATE_TRACKING -DENABLE_LOGGING_AND_PROFILING -DENABLE_DEBUGGER_SUPPORT -Isrc src/zone.cc
+JS2C(["obj/release/libraries.cc", "obj/release/libraries-empty.cc"], ["src/runtime.js", "src/v8natives.js", "src/array.js", "src/string.js", "src/uri.js", "src/math.js", "src/messages.js", "src/apinatives.js", "src/date.js", "src/regexp.js", "src/json.js", "src/liveedit-debugger.js", "src/mirror-debugger.js", "src/debug-debugger.js", "src/macros.py"])
+g++ -o obj/release/libraries.o -c -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -fno-rtti -fno-exceptions -fvisibility=hidden -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -DV8_TARGET_ARCH_X64 -DENABLE_VMSTATE_TRACKING -DENABLE_LOGGING_AND_PROFILING -DENABLE_DEBUGGER_SUPPORT -Iobj/release -Isrc -Isrc obj/release/libraries.cc
+g++ -o obj/release/snapshot-empty.o -c -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -fno-rtti -fno-exceptions -fvisibility=hidden -Wall -Werror -W -Wno-unused-parameter -Wnon-virtual-dtor -pedantic -m64 -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -ansi -mmacosx-version-min=10.4 -DV8_TARGET_ARCH_X64 -DENABLE_VMSTATE_TRACKING -DENABLE_LOGGING_AND_PROFILING -DENABLE_DEBUGGER_SUPPORT -Isrc src/snapshot-empty.cc
+ar rc libv8.a obj/release/accessors.o obj/release/allocation.o obj/release/api.o obj/release/assembler.o obj/release/ast.o obj/release/atomicops_internals_x86_gcc.o obj/release/bignum-dtoa.o obj/release/bignum.o obj/release/bootstrapper.o obj/release/builtins.o obj/release/cached-powers.o obj/release/checks.o obj/release/circular-queue.o obj/release/code-stubs.o obj/release/codegen.o obj/release/compilation-cache.o obj/release/compiler.o obj/release/contexts.o obj/release/conversions.o obj/release/counters.o obj/release/cpu-profiler.o obj/release/data-flow.o obj/release/dateparser.o obj/release/debug-agent.o obj/release/debug.o obj/release/deoptimizer.o obj/release/disassembler.o obj/release/diy-fp.o obj/release/dtoa.o obj/release/execution.o obj/release/extensions/externalize-string-extension.o obj/release/extensions/gc-extension.o obj/release/factory.o obj/release/fast-dtoa.o obj/release/fixed-dtoa.o obj/release/flags.o obj/release/frame-element.o obj/release/frames.o obj/release/full-codegen.o obj/release/func-name-inferrer.o obj/release/gdb-jit.o obj/release/global-handles.o obj/release/handles.o obj/release/hashmap.o obj/release/heap-profiler.o obj/release/heap.o obj/release/hydrogen-instructions.o obj/release/hydrogen.o obj/release/ic.o obj/release/inspector.o obj/release/interpreter-irregexp.o obj/release/jsregexp.o obj/release/jump-target-heavy.o obj/release/jump-target.o obj/release/lithium-allocator.o obj/release/lithium.o obj/release/liveedit.o obj/release/liveobjectlist.o obj/release/log-utils.o obj/release/log.o obj/release/mark-compact.o obj/release/messages.o obj/release/objects-printer.o obj/release/objects-visiting.o obj/release/objects.o obj/release/parser.o obj/release/platform-macos.o obj/release/platform-posix.o obj/release/preparse-data.o obj/release/preparser.o obj/release/profile-generator.o obj/release/property.o obj/release/regexp-macro-assembler-irregexp.o obj/release/regexp-macro-assembler.o obj/release/regexp-stack.o obj/release/register-allocator.o obj/release/rewriter.o obj/release/runtime-profiler.o obj/release/runtime.o obj/release/safepoint-table.o obj/release/scanner-base.o obj/release/scanner.o obj/release/scopeinfo.o obj/release/scopes.o obj/release/serialize.o obj/release/snapshot-common.o obj/release/spaces.o obj/release/string-search.o obj/release/string-stream.o obj/release/strtod.o obj/release/stub-cache.o obj/release/token.o obj/release/top.o obj/release/type-info.o obj/release/unicode.o obj/release/utils.o obj/release/v8-counters.o obj/release/v8.o obj/release/v8threads.o obj/release/variables.o obj/release/version.o obj/release/virtual-frame-heavy.o obj/release/virtual-frame.o obj/release/x64/assembler-x64.o obj/release/x64/builtins-x64.o obj/release/x64/code-stubs-x64.o obj/release/x64/codegen-x64.o obj/release/x64/cpu-x64.o obj/release/x64/debug-x64.o obj/release/x64/deoptimizer-x64.o obj/release/x64/disasm-x64.o obj/release/x64/frames-x64.o obj/release/x64/full-codegen-x64.o obj/release/x64/ic-x64.o obj/release/x64/jump-target-x64.o obj/release/x64/lithium-codegen-x64.o obj/release/x64/lithium-gap-resolver-x64.o obj/release/x64/lithium-x64.o obj/release/x64/macro-assembler-x64.o obj/release/x64/regexp-macro-assembler-x64.o obj/release/x64/register-allocator-x64.o obj/release/x64/stub-cache-x64.o obj/release/x64/virtual-frame-x64.o obj/release/zone.o obj/release/libraries.o obj/release/snapshot-empty.o
+/usr/bin/ranlib: file: libv8.a(atomicops_internals_x86_gcc.o) has no symbols
+/usr/bin/ranlib: file: libv8.a(gdb-jit.o) has no symbols
+/usr/bin/ranlib: file: libv8.a(inspector.o) has no symbols
+/usr/bin/ranlib: file: libv8.a(liveobjectlist.o) has no symbols
+/usr/bin/ranlib: file: libv8.a(objects-printer.o) has no symbols
+/usr/bin/ranlib: file: libv8.a(property.o) has no symbols
+/usr/bin/ranlib: file: libv8.a(regexp-macro-assembler-irregexp.o) has no symbols
+ranlib libv8.a
+ranlib: file: libv8.a(atomicops_internals_x86_gcc.o) has no symbols
+ranlib: file: libv8.a(gdb-jit.o) has no symbols
+ranlib: file: libv8.a(inspector.o) has no symbols
+ranlib: file: libv8.a(liveobjectlist.o) has no symbols
+ranlib: file: libv8.a(objects-printer.o) has no symbols
+ranlib: file: libv8.a(property.o) has no symbols
+ranlib: file: libv8.a(regexp-macro-assembler-irregexp.o) has no symbols
+scons: done building targets.
+checking for v8.h in /Users/daimler456/Desktop/Programs/bestly/vendor/bundle/ruby/1.9.1/gems/therubyracer-0.8.2/ext/v8/upstream/build/v8/include... yes
+checking for main() in -lpthread... yes
+checking for main() in -lobjc... yes
+creating Makefile
+
+make
+compiling rr.cpp
+make: g++-4.2: No such file or directory
+make: *** [rr.o] Error 1

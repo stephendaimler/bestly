@@ -1,0 +1,8 @@
+/Users/daimler456/.rvm/rubies/ruby-1.9.3-p194/bin/ruby extconf.rb 
+checking for main() in -lobjc... yes
+creating Makefile
+
+make
+compiling rr.cpp
+make: g++-4.2: No such file or directory
+make: *** [rr.o] Error 1
