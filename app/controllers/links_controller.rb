@@ -31,6 +31,7 @@ class LinksController < ApplicationController
     end
     if @link.save
       @link.user.vote_for(@link)
+      flash[:notice] = "Deal added!"
       redirect_to links_path
     else
       render 'pages/home'
