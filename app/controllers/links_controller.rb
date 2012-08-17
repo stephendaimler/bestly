@@ -17,11 +17,15 @@ class LinksController < ApplicationController
   end
   
   def new
+    @title = "Add a travel deal"
     @link = Link.new
+    @page = params[:page] || 1
+    @per_page = params[:per_page] || 30
+    @link_counter = (@page.to_i - 1) * @per_page.to_i
+    @links = Link.link_not_posted.paginate(:page => @page, :per_page=>@per_page)
   end
   
   def create
-    #@link  = @user.links.build(params[:link])
     @link = Link.new(params[:link])
     if @link.schedule_link?
       @link.user = User.poster[rand(User.poster.count)]

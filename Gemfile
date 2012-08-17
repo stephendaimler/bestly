@@ -10,8 +10,9 @@ gem 'omniauth-facebook'
 gem 'recaptcha', :require => 'recaptcha/rails'
 gem 'client_side_validations'
 gem 'heroku'
-gem 'pg'
 gem 'newrelic_rpm'
+gem 'pg'
+gem 'rack-rewrite'
 
 group :assets do
   gem 'sass-rails',   "~> 3.2.3"

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120803012950) do
+ActiveRecord::Schema.define(:version => 20120812171736) do
 
   create_table "links", :force => true do |t|
     t.text     "url"
@@ -20,12 +20,12 @@ ActiveRecord::Schema.define(:version => 20120803012950) do
     t.integer  "points",        :default => 0
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.integer  "up_votes",      :default => 0, :null => false
-    t.integer  "down_votes",    :default => 0, :null => false
+    t.integer  "up_votes",      :default => 0,     :null => false
+    t.integer  "down_votes",    :default => 0,     :null => false
     t.float    "hotness"
-    t.boolean  "schedule_link"
+    t.boolean  "schedule_link", :default => false
     t.datetime "post_link_at"
-    t.boolean  "link_posted"
+    t.boolean  "link_posted",   :default => false
   end
 
   add_index "links", ["hotness"], :name => "index_links_on_hotness"

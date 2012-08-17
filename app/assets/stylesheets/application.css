@@ -62,12 +62,12 @@ a.up_arrow {
 	display: block;
 	text-indent: -999em;
 	width: 14px;
-	height: 13.5px;
-	background: transparent url(/assets/icons/arrow_up_sprite.png) no-repeat center top;
+	height: 14px;
+	background: transparent url(/assets/icons/arrow_up_sprite.png) no-repeat center bottom;
 }
 
 a.up_arrow.selected {
-	background-position: center bottom;
+	background-position: center top;
 }
 
 a.down_arrow {

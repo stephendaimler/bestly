@@ -12,5 +12,5 @@ Points: <%= @user.karma %><br />
 <div id= "user_submissions">
 Submissions:	
 <%= render @links %>
-<%= will_paginate @links %>
+<%= will_paginate @links, :page_links => false %>
 </div> <!-- end of user_submissions div -->

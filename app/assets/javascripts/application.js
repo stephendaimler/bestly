@@ -17,7 +17,9 @@ $(document).ready(function(){
 	/* TIME PICKER */
 	
 	$('#link_post_link_at').datetimepicker({
-		ampm: true
+		ampm: true,
+	    dateFormat: 'yy-mm-dd',
+	    timeFormat: 'hh:mm:ss'
 	});
 	
 	/* MOBILE MENU */

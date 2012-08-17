@@ -12,7 +12,7 @@ class UsersController < ApplicationController
       @page = params[:page] || 1
       @per_page = params[:per_page] || 30
       @link_counter = (@page.to_i - 1) * @per_page.to_i
-      @links =@user.links.link_posted.paginate(:page => @page, :per_page=>@per_page)
+      @links = @user.links.link_posted.paginate(:page => @page, :per_page=>@per_page)
       #@links = @user.links.paginate(:page => params[:page])
       @title = @user.username
   end

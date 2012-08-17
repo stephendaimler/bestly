@@ -37,7 +37,11 @@
 		<td class ="link_info">
 			<span class="link_votes"><%= link.plusminus %> votes.</span>
 			Posted by <%= link_to link.user.username, link.user %>
-			<%= time_ago_in_words(link.post_link_at || link.created_at) %> ago.
+			<% if link.link_posted? %>
+				<%= time_ago_in_words(link.post_link_at || link.created_at) %> ago.
+			<% else %>
+				and will go live on <%= time_tag(link.post_link_at) %>.
+			<% end %>	
 			<% if current_user.try(:admin?) %>
 			<%= link_to "Delete", link, :method => :delete, :confirm => "You sure?", :title => "Delete #{link.description}" %>
 			<% end %>
