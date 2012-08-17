@@ -1,8 +1,8 @@
 <h3>Add a travel deal</h3>
 <%= render 'shared/submission_form' %>
 
-<h3>Scheduled deals:</h3>
 <% if current_user.try(:poster?) %>
+<h3>Scheduled deals:</h3>
 	<%= render @links %>
 	<%= will_paginate @links, :page_links => false %>
 <% end %>
