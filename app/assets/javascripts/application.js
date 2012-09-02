@@ -51,7 +51,7 @@ $(document).ready(function(){
 	});*/
 	
 	$('#link_description').live('keyup keydown', function(e) {
-	  var maxLen = 100;
+	  var maxLen = 80;
 	  var left = maxLen - $(this).val().length;
 	  $('#char-count').html(left);
 	});
