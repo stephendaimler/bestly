@@ -84,12 +84,12 @@ $(document).ready(function(){
 			"user[username]": {
 				required: "Enter a username",
 				maxlength: jQuery.format("Enter no more than {0} characters"),
-				remote: jQuery.format("{0} is already in use")
+				remote: "This username is already in use"
 			},
 			"user[email]": {
 				required: "Please enter a valid email address",
 				email: "Please enter a valid email address",
-				remote: jQuery.format("{0} is already in use") 
+				remote: "This email is already in use" 
 			},
 			"user[password]": {
 				required: "Provide a password",
