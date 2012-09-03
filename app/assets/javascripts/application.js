@@ -58,7 +58,7 @@ $(document).ready(function(){
 	
 	/* Validation */
 		
-	$('#user_new.validate-user').validate ({
+	$('#new_user.validate-user').validate ({
 		rules: {
 			"user[username]": {
 				required: true,
