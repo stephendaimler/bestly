@@ -19,7 +19,9 @@ $(document).ready(function(){
 	$('#link_post_link_at').datetimepicker({
 		ampm: true,
 	    dateFormat: 'yy-mm-dd',
-	    timeFormat: 'hh:mm:ss'
+	    timeFormat: 'hh:mm:ss tt',
+		timezone: '-0400',
+		showTimezone: false
 	});
 	
 	/* MOBILE MENU */
