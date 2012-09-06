@@ -40,7 +40,7 @@
 			<% if link.link_posted? %>
 				<%= time_ago_in_words(link.post_link_at || link.created_at) %> ago.
 			<% else %>
-				and will go live on <%= time_tag(link.post_link_at) %>.
+				and will go live on <%= time_tag(link.post_link_at, :format=>'%B %d, %Y %l:%M %p') %>.
 			<% end %>	
 			<% if current_user.try(:admin?) %>
 			<%= link_to "Delete", link, :method => :delete, :confirm => "You sure?", :title => "Delete #{link.description}" %>
