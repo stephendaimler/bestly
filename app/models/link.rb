@@ -1,5 +1,5 @@
 class Link < ActiveRecord::Base
-  attr_accessible :description, :url, :schedule_link, :post_link_at, :link_posted, :hotness
+  attr_accessible :description, :url, :schedule_link, :post_link_at, :link_posted
   
   belongs_to :user
   
