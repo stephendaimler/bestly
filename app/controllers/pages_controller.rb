@@ -6,10 +6,11 @@ class PagesController < ApplicationController
     @link_counter = (@page.to_i - 1) * @per_page.to_i
     @title = "Home"
     @links = Link.link_posted.sorted_by_hotness.paginate(:page => @page, :per_page=>@per_page)
+    @tlinks = Link.link_posted.sorted_by_hotness
     num_links = @links.count
     if num_links > 0
       num_to_choose = [num_links, 30].min
-      @links[rand(num_to_choose)].update_hotness!
+      @tlinks[rand(num_to_choose)].update_hotness!
     end
   end
 
