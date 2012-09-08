@@ -9,7 +9,7 @@ class User < ActiveRecord::Base
   
   has_many :links, :dependent => :destroy
   
-  validates :username, :uniqueness => { :case_sensitive => false }, :length => { :maximum => 15 }
+  validates :username, :uniqueness => { :case_sensitive => false }, :length => { :maximum => 15 }, :presence => true
   
   acts_as_voter
   has_karma(:links, :as => :user)
