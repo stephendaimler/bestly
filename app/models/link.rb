@@ -1,5 +1,5 @@
 class Link < ActiveRecord::Base
-  attr_accessible :description, :url, :schedule_link, :post_link_at, :link_posted
+  attr_accessible :description, :url, :schedule_link, :post_link_at, :link_posted, :hotness
   
   belongs_to :user
   
@@ -9,7 +9,7 @@ class Link < ActiveRecord::Base
   
   acts_as_voteable
   
-  default_scope :order => 'links.created_at DESC'
+  scope :sorted_by_time, :order => 'links.created_at DESC'
   
   scope :sorted_by_hotness, :order => 'links.hotness DESC'
   

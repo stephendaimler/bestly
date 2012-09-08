@@ -8,7 +8,7 @@ class LinksController < ApplicationController
     @per_page = params[:per_page] || 30
     @link_counter = (@page.to_i - 1) * @per_page.to_i
     @title = "New links"
-    @links = Link.link_posted.paginate(:page => @page, :per_page=>@per_page)
+    @links = Link.link_posted.sorted_by_time.paginate(:page => @page, :per_page=>@per_page)
   end
 
   def show
