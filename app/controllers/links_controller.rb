@@ -53,10 +53,14 @@ class LinksController < ApplicationController
   def vote_up
     @link = Link.find(params[:id])
     begin
-      if current_user.voted_for?(@link)
-        current_user.clear_votes(@link)
+      if current_user.admin?
+        User.poster[rand(User.poster.count)].vote_exclusively_for(@link)
       else
-        current_user.vote_exclusively_for(@link)
+        if current_user.voted_for?(@link)
+          current_user.clear_votes(@link)
+        else
+          current_user.vote_exclusively_for(@link)
+        end
       end
       @link.update_hotness!
       respond_to do |format|
@@ -71,11 +75,15 @@ class LinksController < ApplicationController
   def vote_down
     @link = Link.find(params[:id])
     begin
-      if current_user.voted_against?(@link)
-        current_user.clear_votes(@link)
+      if current_user.admin?
+        User.poster[rand(User.poster.count)].vote_exclusively_against(@link)
       else
-        current_user.vote_exclusively_against(@link)
-      end
+        if current_user.voted_against?(@link)
+          current_user.clear_votes(@link)
+        else
+          current_user.vote_exclusively_against(@link)
+        end
+      end  
       @link.update_hotness!
       respond_to do |format|
         format.js
