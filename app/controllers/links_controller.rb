@@ -53,7 +53,7 @@ class LinksController < ApplicationController
   def vote_up
     @link = Link.find(params[:id])
     begin
-      if current_user.admin?
+      if current_user.poster?
         User.poster[rand(User.poster.count)].vote_exclusively_for(@link)
       else
         if current_user.voted_for?(@link)
@@ -75,7 +75,7 @@ class LinksController < ApplicationController
   def vote_down
     @link = Link.find(params[:id])
     begin
-      if current_user.admin?
+      if current_user.poster?
         User.poster[rand(User.poster.count)].vote_exclusively_against(@link)
       else
         if current_user.voted_against?(@link)
